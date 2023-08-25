@@ -25,6 +25,7 @@
 .dropdown-trigger:hover + .dropdown-content,
 .dropdown-content:hover {
   display: block;
+  /* border-top: 1px solid black; */
 }
 
 .dropdown-content Link {
