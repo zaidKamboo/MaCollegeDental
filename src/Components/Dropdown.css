@@ -1,0 +1,39 @@
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  border: none;
+}
+
+.dropdown-trigger {
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* .dropdown-trigger.open {
+} */
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: inline-block;
+  border-top: blue;
+  background-color: white;
+  border: 1px white;
+}
+
+.dropdown-trigger:hover + .dropdown-content,
+.dropdown-content:hover {
+  display: block;
+}
+
+.dropdown-content Link {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content Link:hover {
+  background-color: #f0f0f0;
+}
