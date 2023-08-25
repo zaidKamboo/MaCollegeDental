@@ -17,7 +17,7 @@
   top: 100%;
   left: 0;
   display: inline-block;
-  border-top: blue;
+  border-top: 1px solid blue;
   background-color: white;
   border: 1px white;
 }
@@ -31,6 +31,7 @@
   display: block;
   padding: 10px;
   text-decoration: none;
+  margin-top: 4%;
   color: #333;
 }
 

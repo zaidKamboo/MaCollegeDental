@@ -27,6 +27,28 @@ code {
   text-decoration: none;
   justify-content: center;
 }
+.link {
+  color: rgb(23, 23, 23);
+  text-decoration: none;
+}
+.link:hover {
+  background-color: rgb(17, 82, 232);
+  border-radius: 10px;
+  color: white !important;
+}
+.drpdnlink {
+  color: rgb(23, 23, 23);
+  text-decoration: none;
+}
+.drpdnlink:hover {
+  background-color: rgb(17, 82, 232);
+  border-radius: 3px;
+  color: white !important;
+}
+.bnav {
+  align-items: center;
+}
+
 /* .navcont {
   display: flex !important;
 } */
