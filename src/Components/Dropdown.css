@@ -2,6 +2,7 @@
   position: relative;
   display: inline-block;
   border: none;
+  z-index: 2;
 }
 
 .dropdown-trigger {
@@ -18,18 +19,22 @@
   left: 0;
   display: inline-block;
   border-top: 1px solid blue;
-  background-color: red;
+  background-color: white;
   border: 1px white;
 }
 
 .dropdown-trigger:hover + .dropdown-content,
 .dropdown-content:hover {
+  background-color: white;
   display: block;
+  width: auto;
+  border:1px solid  red;
   /* border-top: 1px solid black; */
 }
 
 .dropdown-content Link {
-  display: block;
+  width: 100%;
+  display: inline;
   padding: 10px;
   text-decoration: none;
   margin-top: 4%;
@@ -37,5 +42,6 @@
 }
 
 .dropdown-content Link:hover {
-  background-color: #f0f0f0;
+
+  background-color: white;
 }

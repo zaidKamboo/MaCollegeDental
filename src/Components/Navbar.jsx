@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import {Link} from "react-router-dom";
+import downarrow from "../downarrow.png";
 const Navbar = () => {
   const [nestedDropdownOpen, setNestedDropdownOpen] = useState(false);
   const toggleNestedDropdown = () => {
@@ -121,7 +122,7 @@ const Navbar = () => {
         <div className='mx-2 navcont'>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
             <li >
-                <Link className="nav-link  mx-2 active link" aria-current="page" to="/home">HOME</Link>
+                <Link className="nav-link mx-2 active link" aria-current="page" to="/home">HOME</Link>
             </li>
             <p className='nav-link oropt'>
             |
@@ -135,8 +136,9 @@ const Navbar = () => {
                     
                   >
                   <Link className='link' to="/aboutUs">
-                  ABOUT US
-                    </Link>
+                    ABOUT US  
+                    <img src={downarrow} className='downArrow link' alt="" />
+                  </Link>
                   </div>
                   {dropdownOpenAbout && (
                     <div className="dropdown-content mx-4 dropdown-item" >
@@ -161,6 +163,7 @@ const Navbar = () => {
                     onMouseEnter={toggleDropdownAdmissions}
                   >
                   ADMISSIONS
+                  <img src={downarrow} className='downArrow link' alt="" />
                   </div>
                   {dropdownOpenAdmissions && (
                     <div className="dropdown-content mx-4 dropdown-item ">
@@ -182,6 +185,7 @@ const Navbar = () => {
                     onMouseEnter={toggleDropdownStudents}
                   >
                   STUDENTS
+                  <img src={downarrow} className='downArrow link' alt="" />
                   </div>
                   {dropdownOpenStudents && (
                     <div className="dropdown-content mx-4 dropdown-item ">
@@ -206,6 +210,7 @@ const Navbar = () => {
                     onMouseEnter={toggleDropdownAcademics}
                   >
                   ACADEMICS
+                  <img src={downarrow} className='downArrow link' alt="" />
                   </div>
                   {dropdownOpenAcademics && (
                     <div className="dropdown-content mx-4 dropdown-item ">
@@ -237,6 +242,7 @@ const Navbar = () => {
                     onMouseEnter={toggleDropdownPatientCare}
                   >
                   ADMISSIONS
+                  <img src={downarrow} className='downArrow link' alt="" />
                   </div>
                   {dropdownOpenPatientCare && (
                     <div className="dropdown-content mx-4 dropdown-item ">

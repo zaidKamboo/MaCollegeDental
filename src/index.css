@@ -11,6 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 .center {
   align-items: center !important;
 }
@@ -29,10 +30,14 @@ code {
 }
 .link {
   color: rgb(23, 23, 23);
+  display: flex;
+  white-space: nowrap;
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
   text-decoration: none;
 }
 .link:hover {
-  background-color: rgb(17, 82, 232);
+  background-color: rgb(20, 52, 129);
   border-radius: 10px;
   color: white !important;
 }
@@ -41,8 +46,8 @@ code {
   text-decoration: none;
 }
 .drpdnlink:hover {
-  background-color: rgb(17, 82, 232);
-  border-radius: 3px;
+  background-color: rgb(4, 4, 107);
+  border-radius: 2px;
   color: white !important;
 }
 .bnav {
@@ -53,17 +58,23 @@ code {
   color: rgb(23, 23, 23);
 }
 .gridLeft{
-  border :1px solid black;
+  /* border :1px solid black; */
   padding:10px;
   /* margin:5px; */
 }
 .gridMain{
-  border :1px solid red;
+  /* border :1px solid red; */
   padding:10px;
   /* margin:1px; */
 }
 .gridRight{
-  border :1px solid yellow;
+  /* border :1px solid yellow; */
   padding:10px;
   /* margin:5  px; */
+}
+.downArrow{
+  width: 10px !important;
+  margin-top: 8px;
+  height: 10px !important;
+  
 }
