@@ -1,12 +1,10 @@
 import React from 'react';
+import Grid from './Grid';
 
 const Home = () => {
   return (
     <div>
-      <div className='container'>
-          Hello User Welcome to ...
-      </div>
-      
+      <Grid/>
     </div>
   )
 }

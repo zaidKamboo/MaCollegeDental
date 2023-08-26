@@ -48,7 +48,22 @@ code {
 .bnav {
   align-items: center;
 }
-
-/* .navcont {
-  display: flex !important;
-} */
+.oropt{
+  margin:none !important;
+  color: rgb(23, 23, 23);
+}
+.gridLeft{
+  border :1px solid black;
+  padding:10px;
+  /* margin:5px; */
+}
+.gridMain{
+  border :1px solid red;
+  padding:10px;
+  /* margin:1px; */
+}
+.gridRight{
+  border :1px solid yellow;
+  padding:10px;
+  /* margin:5  px; */
+}

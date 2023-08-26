@@ -123,6 +123,10 @@ const Navbar = () => {
             <li >
                 <Link className="nav-link  mx-2 active link" aria-current="page" to="/home">HOME</Link>
             </li>
+            <p className='nav-link oropt'>
+            |
+            </p>
+
             <li>
                 <div className="dropdown-container link mx-2" onMouseLeave={toggleDropdownAbout}>
                   <div
@@ -130,7 +134,9 @@ const Navbar = () => {
                     onMouseEnter={toggleDropdownAbout}
                     
                   >
-                    ABOUT US
+                  <Link className='link' to="/aboutUs">
+                  ABOUT US
+                    </Link>
                   </div>
                   {dropdownOpenAbout && (
                     <div className="dropdown-content mx-4 dropdown-item" >
@@ -145,6 +151,9 @@ const Navbar = () => {
                   )}
                 </div>
               </li>
+              <p className='nav-link oropt'>
+                |
+              </p>
               <li>
                 <div className="dropdown-container link" onMouseLeave={toggleDropdownAdmissions}>
                   <div
@@ -163,6 +172,9 @@ const Navbar = () => {
                   )}
                 </div>
               </li> 
+              <p className='nav-link oropt'>
+                |
+              </p>
               <li>
                 <div className="dropdown-container link" onMouseLeave={toggleDropdownStudents}>
                   <div
@@ -184,6 +196,9 @@ const Navbar = () => {
                   )}
                 </div>
             </li>
+            <p className='nav-link oropt'>
+              |
+            </p>
              <li>
                 <div className="dropdown-container link" onMouseLeave={toggleDropdownAcademics}>
                   <div
@@ -206,9 +221,15 @@ const Navbar = () => {
                   )}
                 </div>
             </li> 
+            <p className='nav-link oropt'>
+              |
+            </p>
             <li >
                 <Link className="nav-link  mx-2 active link" aria-current="page" to="/departments">DEPARTMENTS</Link>
             </li>
+            <p className='nav-link oropt'>
+              |
+            </p>
             <li>
                 <div className="dropdown-container link" onMouseLeave={toggleDropdownPatientCare}>
                   <div
@@ -225,15 +246,24 @@ const Navbar = () => {
                   )}
                 </div>
             </li> 
-             <li>
-                <Link className="nav-link mx-2 link" to="/news&events">NEWS & EVENTS</Link>
-              </li>
-              <li>
-                <Link className="nav-link mx-2 link" to="/nss">NSS</Link>
-              </li>
-              <li>
-                <Link className="nav-link mx-2 link" to="/muhsMandate">MUHS MANDATE</Link>
-              </li>
+            <p className='nav-link oropt'>
+                |
+            </p>
+            <li>
+              <Link className="nav-link mx-2 link" to="/news&events">NEWS & EVENTS</Link>
+            </li>
+            <p className='nav-link oropt'>
+              |
+            </p>
+            <li>
+              <Link className="nav-link mx-2 link" to="/nss">NSS</Link>
+            </li>
+            <p className='nav-link oropt'>
+              |
+            </p>
+            <li>
+              <Link className="nav-link mx-2 link" to="/muhsMandate">MUHS MANDATE</Link>
+            </li>
           </ul>
         </div>
       </nav>
