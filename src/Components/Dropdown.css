@@ -23,17 +23,16 @@
   border: 1px white;
 }
 
-.dropdown-trigger:hover + .dropdown-content,
+.dropdown-trigger:hover+.dropdown-content,
 .dropdown-content:hover {
   background-color: white;
   display: block;
   width: auto;
-  border:1px solid  red;
+  border: 1px solid red;
   /* border-top: 1px solid black; */
 }
 
 .dropdown-content Link {
-  width: 100%;
   display: inline;
   padding: 10px;
   text-decoration: none;
@@ -41,7 +40,8 @@
   color: #333;
 }
 
-.dropdown-content Link:hover {
-
-  background-color: white;
+.open {
+  background-color: rgb(20, 52, 129);
+  border-radius: 10px;
+  color: white;
 }

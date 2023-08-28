@@ -118,11 +118,11 @@ const Navbar = () => {
           </div>
         </div>
      </nav> */}
-      <nav className="navbar navbar-expand-lg bg-body-tertiary bnav">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary bnav mt-4 ">
         <div className='mx-2 navcont'>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
             <li >
-              <Link className="nav-link mx-2 active link" aria-current="page" to="/home">HOME</Link>
+              <Link className="nav-link mx-2 active link " aria-current="page" to="/home">HOME</Link>
             </li>
             <p className='nav-link oropt'>
               |
@@ -131,14 +131,14 @@ const Navbar = () => {
             <li>
               <div className="dropdown-container link mx-2" onMouseLeave={toggleDropdownAbout}>
                 <div
-                  className={`dropdown-trigger ${dropdownOpenAbout ? "open" : ""}`}
+                  className={`dropdown-trigger link ${dropdownOpenAbout ? "open" : ""}`}
                   onMouseEnter={toggleDropdownAbout}
 
                 >
-                  <Link className='link' to="/aboutUs">
-                    ABOUT US
-                    <img src={downarrow} className='downArrow link' alt="" />
-                  </Link>
+                  {/* <Link className="" to="/aboutUs"> */}
+                  ABOUT US
+                  <img src={downarrow} className='downArrow link' alt="" />
+                  {/* </Link> */}
                 </div>
                 {dropdownOpenAbout && (
                   <div className="dropdown-content mx-4 dropdown-item" >
@@ -265,12 +265,12 @@ const Navbar = () => {
             <li>
               <Link className="nav-link mx-2 link" to="/nss">NSS</Link>
             </li>
-            <p className='nav-link oropt'>
+            {/* <p className='nav-link oropt'>
               |
             </p>
             <li>
               <Link className="nav-link mx-2 link" to="/muhsMandate">MUHS MANDATE</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>
