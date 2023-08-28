@@ -1,17 +1,17 @@
-import React,{useState} from 'react'
-import {Link} from "react-router-dom";
+import React, { useState } from 'react'
+import { Link } from "react-router-dom";
 import downarrow from "../downarrow.png";
 const Navbar = () => {
   const [nestedDropdownOpen, setNestedDropdownOpen] = useState(false);
   const toggleNestedDropdown = () => {
     setNestedDropdownOpen(!nestedDropdownOpen);
   };
-  
-  const [ dropdownOpenAbout, setDropdownOpenAbout ] = useState( false );
+
+  const [dropdownOpenAbout, setDropdownOpenAbout] = useState(false);
   const toggleDropdownAbout = () => {
     setDropdownOpenAbout(!dropdownOpenAbout);
   };
-  
+
   const [dropdownOpenAdmissions, setDropdownOpenAdmissions] = useState(false);
   const toggleDropdownAdmissions = () => {
     setDropdownOpenAdmissions(!dropdownOpenAdmissions);
@@ -122,138 +122,139 @@ const Navbar = () => {
         <div className='mx-2 navcont'>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
             <li >
-                <Link className="nav-link mx-2 active link" aria-current="page" to="/home">HOME</Link>
-            </li>
-            <p className='nav-link oropt'>
-            |
-            </p>
-
-            <li>
-                <div className="dropdown-container link mx-2" onMouseLeave={toggleDropdownAbout}>
-                  <div
-                    className={`dropdown-trigger ${dropdownOpenAbout ? "open" : ""}`}
-                    onMouseEnter={toggleDropdownAbout}
-                    
-                  >
-                  <Link className='link' to="/aboutUs">
-                    ABOUT US  
-                    <img src={downarrow} className='downArrow link' alt="" />
-                  </Link>
-                  </div>
-                  {dropdownOpenAbout && (
-                    <div className="dropdown-content mx-4 dropdown-item" >
-                      <Link className='drpdnlink' to="/aboutUs/aboutCollege">About College</Link><br/>
-                      <Link className='drpdnlink' to="/aboutUs/mission&vision">Mission & Vision</Link><br/>
-                      <Link className='drpdnlink' to="/aboutUs/presidentSirMessage">President Sir's Message</Link><br />
-                      <Link className="drpdnlink" to="/aboutUs/principalMessage">Principal's Message</Link><br />
-                      <Link className="drpdnlink" to="/aboutUs/vicePrincipal">Vice-Principal</Link><br />
-                      <Link className="drpdnlink" to="/aboutUs/story&futureGoals">Our Story & Future Goals</Link><br />
-                      <Link className="drpdnlink" to="/aboutUs/institutionalCommittiees">Institutional Committees</Link>
-                    </div>
-                  )}
-                </div>
-              </li>
-              <p className='nav-link oropt'>
-                |
-              </p>
-              <li>
-                <div className="dropdown-container link" onMouseLeave={toggleDropdownAdmissions}>
-                  <div
-                    className={`dropdown-trigger ${dropdownOpenAdmissions ? "open" : ""}`}
-                    onMouseEnter={toggleDropdownAdmissions}
-                  >
-                  ADMISSIONS
-                  <img src={downarrow} className='downArrow link' alt="" />
-                  </div>
-                  {dropdownOpenAdmissions && (
-                    <div className="dropdown-content mx-4 dropdown-item ">
-                      <Link className="drpdnlink" to="/students/applicationGuidelines">Application Guidelines</Link><br/>
-                      <Link className="drpdnlink" to="/admissions/admission&affilation">Admission & Affilation</Link><br/>
-                      <Link className="drpdnlink" to="/admissions/courses">Courses</Link><br/>
-                      <Link className="drpdnlink" to="/admissions/curriculum">Curriculum</Link><br/>
-                    </div>
-                  )}
-                </div>
-              </li> 
-              <p className='nav-link oropt'>
-                |
-              </p>
-              <li>
-                <div className="dropdown-container link" onMouseLeave={toggleDropdownStudents}>
-                  <div
-                    className={`dropdown-trigger ${dropdownOpenStudents ? "open" : ""}`}
-                    onMouseEnter={toggleDropdownStudents}
-                  >
-                  STUDENTS
-                  <img src={downarrow} className='downArrow link' alt="" />
-                  </div>
-                  {dropdownOpenStudents && (
-                    <div className="dropdown-content mx-4 dropdown-item ">
-                      <Link className="drpdnlink" to="/students/duties">Duties</Link><br/>
-                      <Link className="drpdnlink" to="/students/anit-ragging">Anti-Ragging</Link><br/>
-                      <Link className="drpdnlink" to="/students/sports">Sports</Link><br/>
-                      <Link className="drpdnlink" to="/students/studentsCouncil">Students Council:Members,Duties</Link><br />
-                      <Link className="drpdnlink" to="/students/hostel">Hostel</Link><br />
-                      <Link className="drpdnlink" to="/students/healthCare&immunizationPolicy">Health Cate & Immunization Policy</Link><br />
-                      {/* **** Alumi TODO **** */}
-                    </div>
-                  )}
-                </div>
+              <Link className="nav-link mx-2 active link" aria-current="page" to="/home">HOME</Link>
             </li>
             <p className='nav-link oropt'>
               |
             </p>
-             <li>
-                <div className="dropdown-container link" onMouseLeave={toggleDropdownAcademics}>
-                  <div
-                    className={`dropdown-trigger ${dropdownOpenAcademics ? "open" : ""}`}
-                    onMouseEnter={toggleDropdownAcademics}
-                  >
+
+            <li>
+              <div className="dropdown-container link mx-2" onMouseLeave={toggleDropdownAbout}>
+                <div
+                  className={`dropdown-trigger ${dropdownOpenAbout ? "open" : ""}`}
+                  onMouseEnter={toggleDropdownAbout}
+
+                >
+                  <Link className='link' to="/aboutUs">
+                    ABOUT US
+                    <img src={downarrow} className='downArrow link' alt="" />
+                  </Link>
+                </div>
+                {dropdownOpenAbout && (
+                  <div className="dropdown-content mx-4 dropdown-item" >
+                    <Link className='drpdnlink' to="/aboutUs/aboutCollege">About College</Link><br />
+                    <Link className='drpdnlink' to="/aboutUs/mission&vision">Mission & Vision</Link><br />
+                    <Link className='drpdnlink' to="/aboutUs/presidentSirMessage">President Sir's Message</Link><br />
+                    <Link className="drpdnlink" to="/aboutUs/principalMessage">Principal's Message</Link><br />
+                    <Link className="drpdnlink" to="/aboutUs/vicePrincipal">Vice-Principal</Link><br />
+                    <Link className="drpdnlink" to="/aboutUs/story&futureGoals">Our Story & Future Goals</Link><br />
+                    <Link className="drpdnlink" to="/aboutUs/institutionalCommittiees">Institutional Committees</Link>
+                  </div>
+                )}
+              </div>
+            </li>
+            <p className='nav-link oropt'>
+              |
+            </p>
+            <li>
+              <div className="dropdown-container link " onMouseLeave={toggleDropdownAdmissions}>
+                <div
+                  className={`dropdown-trigger link ${dropdownOpenAdmissions ? "open" : ""}`}
+                  onMouseEnter={toggleDropdownAdmissions}
+                >
+                  {/* <div className="link"></div> */}
+                  ADMISSIONS
+                  <img src={downarrow} className='downArrow link' alt="" />
+                </div>
+                {dropdownOpenAdmissions && (
+                  <div className="dropdown-content mx-4 dropdown-item ">
+                    <Link className="drpdnlink" to="/students/applicationGuidelines">Application Guidelines</Link><br />
+                    <Link className="drpdnlink" to="/admissions/admission&affilation">Admission & Affilation</Link><br />
+                    <Link className="drpdnlink" to="/admissions/courses">Courses</Link><br />
+                    <Link className="drpdnlink" to="/admissions/curriculum">Curriculum</Link><br />
+                  </div>
+                )}
+              </div>
+            </li>
+            <p className='nav-link oropt'>
+              |
+            </p>
+            <li>
+              <div className="dropdown-container link" onMouseLeave={toggleDropdownStudents}>
+                <div
+                  className={`dropdown-trigger link ${dropdownOpenStudents ? "open" : ""}`}
+                  onMouseEnter={toggleDropdownStudents}
+                >
+                  STUDENTS
+                  <img src={downarrow} className='downArrow link' alt="" />
+                </div>
+                {dropdownOpenStudents && (
+                  <div className="dropdown-content mx-4 dropdown-item ">
+                    <Link className="drpdnlink" to="/students/duties">Duties</Link><br />
+                    <Link className="drpdnlink" to="/students/anit-ragging">Anti-Ragging</Link><br />
+                    <Link className="drpdnlink" to="/students/sports">Sports</Link><br />
+                    <Link className="drpdnlink" to="/students/studentsCouncil">Students Council:Members,Duties</Link><br />
+                    <Link className="drpdnlink" to="/students/hostel">Hostel</Link><br />
+                    <Link className="drpdnlink" to="/students/healthCare&immunizationPolicy">Health Cate & Immunization Policy</Link><br />
+                    {/* **** Alumi TODO **** */}
+                  </div>
+                )}
+              </div>
+            </li>
+            <p className='nav-link oropt'>
+              |
+            </p>
+            <li>
+              <div className="dropdown-container link" onMouseLeave={toggleDropdownAcademics}>
+                <div
+                  className={`dropdown-trigger link ${dropdownOpenAcademics ? "open" : ""}`}
+                  onMouseEnter={toggleDropdownAcademics}
+                >
                   ACADEMICS
                   <img src={downarrow} className='downArrow link' alt="" />
-                  </div>
-                  {dropdownOpenAcademics && (
-                    <div className="dropdown-content mx-4 dropdown-item ">
-                      <Link className="drpdnlink" to="/academics/academicCalendar">Academic Calendar</Link><br/>
-                      <Link className="drpdnlink" to="/academics/learningPathways">Learning Pathways</Link><br/>
-                      <Link className="drpdnlink" to="/academics/innovativeTeachingActivities">Innovative Teaching Activities</Link><br/>
-                      <Link className="drpdnlink" to="/academics/extraCurricularActivities">Extra Curricular Activities</Link><br />
-                      <Link className="drpdnlink" to="/academics/listOfHolidays">List Of Holidays</Link><br />
-                      <Link className="drpdnlink" to="/academics/syllabus">Syllabus</Link><br />
-                      <Link className="drpdnlink" to="/academics/research">Research</Link><br />
-                      <Link className="drpdnlink" to="/academics/libraryFacilities">Library Facilities</Link><br/>
-                    </div>
-                  )}
                 </div>
-            </li> 
+                {dropdownOpenAcademics && (
+                  <div className="dropdown-content mx-4 dropdown-item ">
+                    <Link className="drpdnlink" to="/academics/academicCalendar">Academic Calendar</Link><br />
+                    <Link className="drpdnlink" to="/academics/learningPathways">Learning Pathways</Link><br />
+                    <Link className="drpdnlink" to="/academics/innovativeTeachingActivities">Innovative Teaching Activities</Link><br />
+                    <Link className="drpdnlink" to="/academics/extraCurricularActivities">Extra Curricular Activities</Link><br />
+                    <Link className="drpdnlink" to="/academics/listOfHolidays">List Of Holidays</Link><br />
+                    <Link className="drpdnlink" to="/academics/syllabus">Syllabus</Link><br />
+                    <Link className="drpdnlink" to="/academics/research">Research</Link><br />
+                    <Link className="drpdnlink" to="/academics/libraryFacilities">Library Facilities</Link><br />
+                  </div>
+                )}
+              </div>
+            </li>
             <p className='nav-link oropt'>
               |
             </p>
             <li >
-                <Link className="nav-link  mx-2 active link" aria-current="page" to="/departments">DEPARTMENTS</Link>
+              <Link className="nav-link  mx-2 active link" aria-current="page" to="/departments">DEPARTMENTS</Link>
             </li>
             <p className='nav-link oropt'>
               |
             </p>
             <li>
-                <div className="dropdown-container link" onMouseLeave={toggleDropdownPatientCare}>
-                  <div
-                    className={`dropdown-trigger ${dropdownOpenPatientCare ? "open" : ""}`}
-                    onMouseEnter={toggleDropdownPatientCare}
-                  >
+              <div className="dropdown-container link" onMouseLeave={toggleDropdownPatientCare}>
+                <div
+                  className={`dropdown-trigger link ${dropdownOpenPatientCare ? "open" : ""}`}
+                  onMouseEnter={toggleDropdownPatientCare}
+                >
                   ADMISSIONS
                   <img src={downarrow} className='downArrow link' alt="" />
-                  </div>
-                  {dropdownOpenPatientCare && (
-                    <div className="dropdown-content mx-4 dropdown-item ">
-                      <Link className="drpdnlink" to="/patientCare/facilities">Facilities</Link><br/>
-                      <Link className="drpdnlink" to="/patientCare/concessions">Concessions</Link><br/>
-                    </div>
-                  )}
                 </div>
-            </li> 
+                {dropdownOpenPatientCare && (
+                  <div className="dropdown-content mx-4 dropdown-item ">
+                    <Link className="drpdnlink" to="/patientCare/facilities">Facilities</Link><br />
+                    <Link className="drpdnlink" to="/patientCare/concessions">Concessions</Link><br />
+                  </div>
+                )}
+              </div>
+            </li>
             <p className='nav-link oropt'>
-                |
+              |
             </p>
             <li>
               <Link className="nav-link mx-2 link" to="/news&events">NEWS & EVENTS</Link>
