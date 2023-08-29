@@ -122,7 +122,7 @@ const Navbar = () => {
         <div className='mx-2 navcont'>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
             <li >
-              <Link className="nav-link mx-2 active link " aria-current="page" to="/home">HOME</Link>
+              <Link className="nav-link mx-2 active link " aria-current="page" to="/">HOME</Link>
             </li>
             <p className='nav-link oropt'>
               |
@@ -135,20 +135,32 @@ const Navbar = () => {
                   onMouseEnter={toggleDropdownAbout}
 
                 >
-                  {/* <Link className="" to="/aboutUs"> */}
                   ABOUT US
                   <img src={downarrow} className='downArrow link' alt="" />
-                  {/* </Link> */}
                 </div>
                 {dropdownOpenAbout && (
                   <div className="dropdown-content mx-4 dropdown-item" >
-                    <Link className='drpdnlink' to="/aboutUs/aboutCollege">About College</Link><br />
-                    <Link className='drpdnlink' to="/aboutUs/mission&vision">Mission & Vision</Link><br />
-                    <Link className='drpdnlink' to="/aboutUs/presidentSirMessage">President Sir's Message</Link><br />
-                    <Link className="drpdnlink" to="/aboutUs/principalMessage">Principal's Message</Link><br />
-                    <Link className="drpdnlink" to="/aboutUs/vicePrincipal">Vice-Principal</Link><br />
-                    <Link className="drpdnlink" to="/aboutUs/story&futureGoals">Our Story & Future Goals</Link><br />
-                    <Link className="drpdnlink" to="/aboutUs/institutionalCommittiees">Institutional Committees</Link>
+                    <div className="divdropdownLink">
+                      <Link className='drpdnlink' to="/aboutUs/aboutCollege">About College</Link><br />
+                    </div>
+                    <div className="divdropdownLink">
+                      <Link className='drpdnlink' to="/aboutUs/mission&vision">Mission & Vision</Link><br />
+                    </div>
+                    <div className="divdropdownLink">
+                      <Link className='drpdnlink' to="/aboutUs/presidentSirMessage">President Sir's Message</Link><br />
+                    </div>
+                    <div className="divdropdownLink">
+                      <Link className="drpdnlink" to="/aboutUs/principalMessage">Principal's Message</Link><br />
+                    </div>
+                    <div className="divdropdownLink">
+                      <Link className="drpdnlink" to="/aboutUs/vicePrincipal">Vice-Principal</Link><br />
+                    </div>
+                    <div className="divdropdownLink">
+                      <Link className="drpdnlink" to="/aboutUs/story&futureGoals">Our Story & Future Goals</Link><br />
+                    </div>
+                    <div className="divdropdownLink">
+                      <Link className="drpdnlink" to="/aboutUs/institutionalCommittiees">Institutional Committees</Link>
+                    </div>
                   </div>
                 )}
               </div>

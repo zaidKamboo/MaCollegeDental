@@ -42,24 +42,46 @@ code {
 }
 
 .link:hover {
-  background-color: rgb(20, 52, 129);
-  border-radius: 10px;
   color: white !important;
+  background-color: rgb(9, 53, 119);
+  border-radius: 10px;
 }
 
 .drpdnlink {
   color: rgb(23, 23, 23);
   width: 100%;
-  text-align: center;
   text-decoration: none;
 }
 
 .drpdnlink:hover {
-  background-color: rgb(4, 4, 107);
-  padding: 8px;
+  color: white;
+  border-radius: 3px;
+  width: 100%;
+  background-color: rgb(9, 53, 119);
+  /* padding-left: 8px; */
+  /* padding-bottom: 3px; */
   border-radius: 2px;
-  justify-content: center;
+  text-align: center;
+}
+
+.divdropdownLink {
+  /* border: 2px solid black; */
+  width: 100%;
+  margin-top: 20px;
+  /* text-align: center; */
+  padding-left: 3px;
+  margin-bottom: 15px;
+}
+
+.divdropdownLink:hover {
+  /* border: 2px solid black; */
   color: white !important;
+  border-radius: 3px;
+  width: 100%;
+  background-color: rgb(9, 53, 119);
+  /* padding-left: 5px; */
+  border-radius: 2px;
+  /* text-align: center; */
 }
 
 .bnav {
@@ -121,12 +143,42 @@ code {
   border: 1px solid red;
 }
 
-.sidenavItem {
-  border: 2px solid black;
+.sideNavDiv {
+  width: 100%;
 
+}
+
+.sideNavDiv:hover {
+  width: 100%;
+  border: 1px solid saddlebrown;
+  background-color: rgb(47, 105, 192);
+  color: white;
+}
+
+.sidenavItem {
+  text-decoration: none;
+  color: black;
 }
 
 .sidenavItem:hover {
   color: white;
-  background-color: aqua;
 }
+
+.footer-div {
+  background-color: rgb(185, 185, 185);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* .sidenavItem {
+  border: 2px solid black;
+
+} */
+
+/* .sidenavItem:hover {
+  color: white;
+  background-color: aqua;
+} */
