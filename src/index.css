@@ -48,7 +48,6 @@ code {
 }
 
 .drpdnlink {
-  color: rgb(23, 23, 23);
   width: 100%;
   text-decoration: none;
 }
@@ -182,3 +181,96 @@ code {
   color: white;
   background-color: aqua;
 } */
+.scroll-container {
+  overflow: hidden;
+  height: 200px;
+  /* Adjust the height as needed */
+}
+
+.bullet-scroll-section {
+  width: 100%;
+  height: 200px;
+  /* Adjust the height as needed */
+  overflow: hidden;
+  position: relative;
+}
+
+.bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  animation: scrollAnimation 15s linear infinite;
+}
+
+.bullet-list li {
+  display: none;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 5px;
+}
+
+.bullet-list .active {
+  display: block;
+  color: #333;
+  /* Customize the color */
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.ppMainContainer {
+  align-items: center;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+}
+
+.item1 {
+  display: inline-flex;
+  margin-left: 200px;
+  margin-right: 200px;
+  /* border: 2px solid red; */
+  align-items: center;
+
+}
+
+.item2 {
+  height: 100%;
+  margin-left: 200px;
+  margin-right: 200px;
+  /* border: 2px solid gray; */
+  text-align: center;
+}
+
+.innerContainer {
+  display: inline;
+  align-items: center;
+  text-align: center;
+}
+
+.headin {
+  color: rgb(13, 13, 107);
+}
+
+.messageContainer {
+  text-align: center;
+}
+
+.msgLink {
+  font-size: 21px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.msgLinkLeft {
+  font-size: 21px;
+  margin-left: 200px;
+  margin-right: 200px;
+}

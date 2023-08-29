@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from './Carousel'
 import HorizontalList from './HorizontalList';
+import AutoScrollText from './AutoScrollText';
 
 const Grid = () => {
     const itemList = ['MUHS MANDATE', 'LINK 2', 'LINK 3'];
@@ -22,9 +23,9 @@ const Grid = () => {
                         <Carousel />
                     </div>
                     <div class="col-2 ">
-                        <h6>News & Announcements</h6>
+                        <h5>NEWS & ANNOUNCEMENTS</h5>
                         <div className="gridRight">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum est, quae corporis voluptate iste minus, repudiandae exercitationem, expedita debitis repellat vel eaque ullam dignissimos. Consectetur tenetur sed ex, dignissimos optio laborum consequuntur amet dolorem quidem, cupiditate placeat minus harum qui, similique blanditiis laudantium nisi id quo autem corrupti soluta. Cupiditate totam odit, corrupti id, dicta ad nihil animi illum sed nulla quidem quaerat asperiores.
+                            <AutoScrollText />
                         </div>
                     </div>
                 </div>
