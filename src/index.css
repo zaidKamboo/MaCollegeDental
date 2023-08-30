@@ -264,6 +264,7 @@ code {
 }
 
 .msgLink {
+  color: rgb(67, 180, 255);
   font-size: 21px;
   margin-left: 200px;
   margin-right: 200px;

@@ -37,7 +37,6 @@ const PrincipalandOtherDetails = () => {
                                 Dr. Ramandeep Dugal
                             </b>
                         </h5>
-
                     </div>
                 </div>
             </div>
