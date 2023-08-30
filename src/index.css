@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -260,18 +261,79 @@ code {
 }
 
 .messageContainer {
+  display: inline-block;
   text-align: center;
 }
 
 .msgLink {
-  color: rgb(67, 180, 255);
+  /* color: rgb(67, 180, 255); */
   font-size: 21px;
-  margin-left: 200px;
+  margin-left: 450px;
   margin-right: 200px;
 }
 
 .msgLinkLeft {
   font-size: 21px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 152px;
+}
+
+.BFaOC {
+  margin-top: 33px;
+  display: inline-block;
+  align-items: center;
+}
+
+.head {
+  font-style: bold;
+  font-weight: bolder;
+  color: rgb(10, 10, 104);
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.content {
+  font-size: 21px;
+  text-align: center;
+}
+
+.uCIL {
+  display: flex;
+  /* justify-content: center; */
+  /* border: 2px solid firebrick */
+}
+
+.uc {
+  /* border: 1px solid black; */
+  align-items: center;
+  margin-left: 10%;
+}
+
+.il {
+  align-items: center;
+  margin-left: 25%;
+}
+
+.heade {
+  font-style: bold;
+  font-weight: bolder;
+  color: rgb(10, 10, 104);
+  font-size: 38px;
+  text-align: center;
+  margin-left: 33px;
+}
+
+.impLinks {
+  /* text-align: center; */
+  font-size: 18px;
+}
+
+.lnk {
+  color: black;
+  text-decoration: none;
+}
+
+.vandMap {
+  margin-left: 87px;
+  display: flex;
 }
