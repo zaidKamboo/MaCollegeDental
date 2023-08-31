@@ -3,12 +3,15 @@
   display: inline-block;
   border: none;
   z-index: 2;
+
 }
+
 
 .dropdown-trigger {
   cursor: pointer;
   padding: 10px;
 }
+
 
 /* .dropdown-trigger.open {
 } */
@@ -18,12 +21,12 @@
   top: 100%;
   left: 0;
   display: inline-block;
-  border-top: 1px solid blue;
+  border-top: 1px solid rgb(255, 0, 0);
   background-color: white;
   border: 1px white;
 }
 
-.dropdown-trigger:hover+.dropdown-content,
+.dropdown-trigger:hover + .dropdown-content,
 .dropdown-content:hover {
   background-color: white;
   display: block;

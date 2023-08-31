@@ -2,6 +2,7 @@ import React from 'react'
 import presiImg from "../president.jpg"
 import PrinImg from "../principal.jpg"
 import { Link } from 'react-router-dom'
+import ilink from "../link.jpg"
 const PrincipalandOtherDetails = () => {
     return (
 
@@ -64,6 +65,7 @@ const PrincipalandOtherDetails = () => {
                         Up-Coming Events
                     </p>
                     <div className="impLinks">
+                        <img src={ilink} alt="" className="imgLink" />
                         <Link className="lnk" to="/publicHealthMinistry">
                             Dept Of Public Health Ministry
                         </Link>
@@ -76,22 +78,27 @@ const PrincipalandOtherDetails = () => {
                     <div className="impLinks">
                         <Link className='lnk' to="
                         /bdsfp">
+                            <img src={ilink} alt="" className="imgLink" />
                             BDS FEES PROPOSAL 2023-24
                         </Link>
                         <br />
                         <Link className='lnk' to="
                         /mdsfp">
+                            <img src={ilink} alt="" className="imgLink" />
                             MDS FEES PROPOSAL 2023-24
                         </Link>
                         <br />
                         <Link className='lnk' to="
                         /newsletter">
+                            <img src={ilink} alt="" className="imgLink" />
                             News Letter
                         </Link>
                         <br />
                         <Link className='lnk' to="
                         /newsletter">
-                            List of selected Candidates of Institutional Level Round-1<br />(Institutional Quota)
+                            <img src={ilink} alt="" className="imgLink" />
+                            List of selected Candidates of Institutional Level Round-1
+                            (Institutional Quota)
                         </Link>
                     </div>
                 </div>

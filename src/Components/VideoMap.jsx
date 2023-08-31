@@ -11,7 +11,7 @@ const VideoMap = () => {
 
     return (
         <div className='vandMap'>
-            <video
+            <video className='video'
                 ref={videoRef}
                 onEnded={handleVideoEnded}
                 autoPlay
@@ -22,9 +22,8 @@ const VideoMap = () => {
                 <source src={v} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-            <div className="map">
-                <img src={map} alt="" />
-            </div>
+            <div className="margin"></div>
+            <img className='map' src={map} alt="" />
         </div>
     );
 };

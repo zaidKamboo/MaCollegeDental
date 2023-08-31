@@ -4,13 +4,11 @@ import Footer from "./Components/Footer";
 import Home from "./Components/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavbarTop from "./Components/NavbarTop";
-// import NestedDropdown from "./Components/NestedDropdown";
 function App() {
   return (
     <Router>
       <NavbarTop />
       <Navbar />
-      {/* <NestedDropdown /> */}
       <>
         <Routes>
           <Route exact path="/" Component={Home} />

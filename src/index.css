@@ -44,16 +44,28 @@ code {
 
 .link:hover {
   color: white !important;
+  border-bottom: 2px solid white;
   background-color: rgb(9, 53, 119);
   border-radius: 10px;
 }
 
+/* .dropdown-item {
+  border: 2px solid green;
+}
+
+.dropdown-item:hover {
+  margin-top: 4px solid rgb(0, 119, 255);
+} */
+
 .drpdnlink {
   width: 100%;
   text-decoration: none;
+  color: rgb(0, 119, 255);
+  /* margin-left: 5%; */
 }
 
 .drpdnlink:hover {
+  /* border-left: 3px solid red; */
   color: white;
   border-radius: 3px;
   width: 100%;
@@ -164,13 +176,11 @@ code {
   color: white;
 }
 
-.footer-div {
+.foter {
   background-color: rgb(185, 185, 185);
-}
-
-.footer {
   text-align: center;
-  padding: 20px;
+  padding: 3%;
+  width: 100%;
 }
 
 /* .sidenavItem {
@@ -334,6 +344,59 @@ code {
 }
 
 .vandMap {
-  margin-left: 87px;
+  margin-top: 2%;
+  /* width: 150%; */
+  /* border: 3px solid black; */
+  /* height: max-content; */
   display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.video {
+  /* border: 2px solid blue; */
+  width: 50%;
+  height: 100%;
+}
+
+.map {
+  /* border: 2px solid saddlebrown; */
+  width: max-content;
+  /* height: 75%; */
+}
+
+.margin {
+  margin: 1%;
+}
+
+.imgLink {
+  width: 5%;
+  height: 5%;
+}
+
+.imgLink:hover {
+  cursor: pointer;
+}
+
+.mainContainer {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+.cont {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+
+.copyRight1 {
+  padding: 4%;
+  font-size: 19px;
+}
+
+.paraContent {
+  padding: 7%;
 }

@@ -32,12 +32,15 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary bnav mt-4 ">
+      <nav className="navbar navbar-expand-lg bnav mt-4 navbar-light bg-light">
         <div className='mx-2 navcont'>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
             <li >
               <Link className="nav-link mx-2 active link " aria-current="page" to="/">HOME</Link>
             </li>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
             <p className='nav-link oropt'>
               |
             </p>
