@@ -3,11 +3,9 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NavbarTop from "./Components/NavbarTop";
 function App() {
   return (
     <Router>
-      <NavbarTop />
       <Navbar />
       <>
         <Routes>
