@@ -31,6 +31,19 @@ const NavbarTop = () => {
   const toggleDropdownPatientCare = () => {
     setDropdownOpenPatientCare( !dropdownOpenPatientCare );
   };
+  const [ Menu, setMenu ] = useState( false )
+  const toggleMenu = () => {
+    setMenu( !Menu );
+    var x = document.getElementById( "nav" );
+    if ( x.className === "navbar" ) {
+      console.log("hello")
+      x.className += "respNav"
+    }
+    else {
+      x.className = "navbar"
+    }
+  }
+  
   return (
     <div className='Navbar'>
       <div className='navbarTop'>
@@ -40,10 +53,10 @@ const NavbarTop = () => {
         <h4 className='CollegeTitle'>
           M. A. Rangoonwala College of Dental Sciences & Research Centre, Pune
         </h4>
-        <img className='moreOpt' src={more} alt="" />
+        <img className='moreOpt' src={more} onClick={toggleMenu} alt="" />
       </div >
       <div className="navbarBottom">
-        <nav className="navbar">
+        <nav className="navbar" id='nav'>
           <ul className="nav-items navbar-nav">
             <li className='navLinks'>
               <Link className="navLink " aria-current="page" to="/">HOME</Link>

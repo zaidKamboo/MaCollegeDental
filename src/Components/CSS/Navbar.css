@@ -1,56 +1,84 @@
 .Navbar {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-
+.navbarBottom {
+  border: 2px solid gold;
+  background-color: rgb(228, 226, 226);
+}
 .navbar {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    border: 2px solid red;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 2px solid red;
 }
 
 .nav-items {
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    margin: 0.2rem;
-    align-items: center;
-    justify-content: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0.2rem;
+  align-items: center;
+  justify-content: center;
 }
 
-
 .navLink {
-    color: rgb(23, 23, 23);
-    display: flex;
-    white-space: nowrap;
-    text-decoration: none;
+  color: rgb(23, 23, 23);
+  display: flex;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 .oropt {
-    margin-top: .6rem;
-    margin-left: .3rem;
-    margin-right: .3rem;
-    color: rgb(23, 23, 23);
+  margin-top: 0.6rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  color: rgb(23, 23, 23);
 }
 
 .navLink:hover {
-    color: white !important;
-    border-bottom: 2px solid white;
-    background-color: rgb(9, 53, 119);
-    border-radius: 10px;
+  color: white !important;
+  border-bottom: 2px solid white;
+  background-color: rgb(9, 53, 119);
+  border-radius: 10px;
 }
 
 .dropDownLinks {
-    z-index: 2;
+  z-index: 2;
 }
 
-@media screen and (min-width: 336px) and (max-width:480px) {
-    .moreOpt {
-        display: contents;
-        justify-content: center;
-        padding: 23px;
-        height: 75px;
-        width: 75px;
-    }
+@media screen and (min-width: 0px) and (max-width: 972px) {
+  .moreOpt {
+    display: flex;
+    justify-content: center;
+    padding: 23px;
+    height: 75px;
+    width: 75px;
+    margin-top: 1.4rem;
+    margin-left: 1.3rem;
+    /* padding-top: 0.5rem; */
+  }
+  .navbar {
+    align-items: center;
+    justify-content: center;
+    display: none;
+    border: 2px solid red;
+  }
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    right: 0;
+  }
+  .navLink {
+    justify-content: right;
+  }
+  .oropt {
+    display: none;
+  }
+  .navbarBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
 }
