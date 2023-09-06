@@ -2,7 +2,7 @@ import React from 'react'
 
 const CopyrightDetails = () => {
     return (
-        <div className='mainContainer'>
+        <div className='CmainContainer'>
             <div className="cont">
                 <header className='copyRight1'>
                     M. C. E. Society's<br />

@@ -8,34 +8,34 @@ import "./CSS/TopNav.css"
 import "./CSS/Navbar.css"
 const NavbarTop = () => {
 
-  const [dropdownOpenAbout, setDropdownOpenAbout] = useState( false );
+  const [dropdownOpenAbout, setDropdownOpenAbout] = useState(false);
   const toggleDropdownAbout = () => {
-    setDropdownOpenAbout( !dropdownOpenAbout );
+    setDropdownOpenAbout(!dropdownOpenAbout);
   };
 
-  const [dropdownOpenAdmissions, setDropdownOpenAdmissions] = useState( false );
+  const [dropdownOpenAdmissions, setDropdownOpenAdmissions] = useState(false);
   const toggleDropdownAdmissions = () => {
-    setDropdownOpenAdmissions( !dropdownOpenAdmissions );
+    setDropdownOpenAdmissions(!dropdownOpenAdmissions);
   };
 
-  const [dropdownOpenStudents, setDropdownOpenStudents] = useState( false );
+  const [dropdownOpenStudents, setDropdownOpenStudents] = useState(false);
   const toggleDropdownStudents = () => {
-    setDropdownOpenStudents( !dropdownOpenStudents );
+    setDropdownOpenStudents(!dropdownOpenStudents);
   };
 
-  const [dropdownOpenAcademics, setDropdownOpenAcademics] = useState( false );
+  const [dropdownOpenAcademics, setDropdownOpenAcademics] = useState(false);
   const toggleDropdownAcademics = () => {
-    setDropdownOpenAcademics( !dropdownOpenAcademics );
+    setDropdownOpenAcademics(!dropdownOpenAcademics);
   };
-  const [dropdownOpenPatientCare, setDropdownOpenPatientCare] = useState( false );
+  const [dropdownOpenPatientCare, setDropdownOpenPatientCare] = useState(false);
   const toggleDropdownPatientCare = () => {
-    setDropdownOpenPatientCare( !dropdownOpenPatientCare );
+    setDropdownOpenPatientCare(!dropdownOpenPatientCare);
   };
-  const [ Menu, setMenu ] = useState( false )
+  const [Menu, setMenu] = useState(false)
   const toggleMenu = () => {
-    setMenu( !Menu );
-    var x = document.getElementById( "nav" );
-    if ( x.className === "navbar" ) {
+    setMenu(!Menu);
+    var x = document.getElementById("nav");
+    if (x.className === "navbar") {
       console.log("hello")
       x.className += "respNav"
     }
@@ -43,7 +43,7 @@ const NavbarTop = () => {
       x.className = "navbar"
     }
   }
-  
+
   return (
     <div className='Navbar'>
       <div className='navbarTop'>
@@ -59,7 +59,7 @@ const NavbarTop = () => {
         <nav className="navbar" id='nav'>
           <ul className="nav-items navbar-nav">
             <li className='navLinks'>
-              <Link className="navLink " aria-current="page" to="/">HOME</Link>
+              <Link className="navLink " id="home" aria-current="page" to="/">HOME</Link>
             </li>
 
             <p className='nav-link oropt'>
@@ -67,9 +67,9 @@ const NavbarTop = () => {
             </p>
 
             <li className="navLinks">
-              <div className="dropdown-container link mx-2" onMouseLeave={toggleDropdownAbout}>
+              <div className="dropdown-container link " onMouseLeave={toggleDropdownAbout}>
                 <div
-                  className={`dropdown-trigger dropDownLinks link ${ dropdownOpenAbout ? "open" : "" }`}
+                  className={`dropdown-trigger  navLink ${dropdownOpenAbout ? "open" : ""}`}
                   onMouseEnter={toggleDropdownAbout}
 
                 >
@@ -77,7 +77,7 @@ const NavbarTop = () => {
                   <img src={downarrow} className='downArrow link' alt="" />
                 </div>
                 {dropdownOpenAbout && (
-                  <div className="dropdown-content mx-4 dropdown-item" >
+                  <div className="dropdown-content dropdown-item" >
                     <div className="divdropdownLink">
                       <Link className='drpdnlink' to="/aboutUs/aboutCollege">About College</Link><br />
                     </div>
@@ -109,14 +109,14 @@ const NavbarTop = () => {
             <li className="navLinks">
               <div className="dropdown-container link " onMouseLeave={toggleDropdownAdmissions}>
                 <div
-                  className={`dropdown-trigger link ${ dropdownOpenAdmissions ? "open" : "" }`}
+                  className={`dropdown-trigger  navLink ${dropdownOpenAdmissions ? "open" : ""}`}
                   onMouseEnter={toggleDropdownAdmissions}
                 >
                   ADMISSIONS
                   <img src={downarrow} className='downArrow link' alt="" />
                 </div>
                 {dropdownOpenAdmissions && (
-                  <div className="dropdown-content mx-4 dropdown-item ">
+                  <div className="dropdown-content  dropdown-item ">
                     <div className="divdropdownLink">
                       <Link className="drpdnlink" to="/students/applicationGuidelines">Application Guidelines</Link><br />
                     </div>
@@ -137,16 +137,16 @@ const NavbarTop = () => {
               |
             </p>
             <li className="navLinks">
-              <div className="dropdown-container link" onMouseLeave={toggleDropdownStudents}>
+              <div className="dropdown-container  link" onMouseLeave={toggleDropdownStudents}>
                 <div
-                  className={`dropdown-trigger link ${ dropdownOpenStudents ? "open" : "" }`}
+                  className={`dropdown-trigger navLink ${dropdownOpenStudents ? "open" : ""}`}
                   onMouseEnter={toggleDropdownStudents}
                 >
                   STUDENTS
                   <img src={downarrow} className='downArrow link' alt="" />
                 </div>
                 {dropdownOpenStudents && (
-                  <div className="dropdown-content mx-4 dropdown-item ">
+                  <div className="dropdown-content  dropdown-item ">
                     <div className="divdropdownLink">
                       <Link className="drpdnlink" to="/students/duties">Duties</Link><br />
                     </div>
@@ -175,14 +175,14 @@ const NavbarTop = () => {
             <li className="navLinks">
               <div className="dropdown-container link" onMouseLeave={toggleDropdownAcademics}>
                 <div
-                  className={`dropdown-trigger link ${ dropdownOpenAcademics ? "open" : "" }`}
+                  className={`dropdown-trigger navLink ${dropdownOpenAcademics ? "open" : ""}`}
                   onMouseEnter={toggleDropdownAcademics}
                 >
                   ACADEMICS
                   <img src={downarrow} className='downArrow link' alt="" />
                 </div>
                 {dropdownOpenAcademics && (
-                  <div className="dropdown-content mx-4 dropdown-item ">
+                  <div className="dropdown-content  dropdown-item ">
                     <div className="divdropdownLink">
                       <Link className="drpdnlink" to="/academics/academicCalendar">Academic Calendar</Link><br />
                     </div>
@@ -223,14 +223,14 @@ const NavbarTop = () => {
             <li className="navLinks">
               <div className="dropdown-container link" onMouseLeave={toggleDropdownPatientCare}>
                 <div
-                  className={`dropdown-trigger link ${ dropdownOpenPatientCare ? "open" : "" }`}
+                  className={`dropdown-trigger navLink ${dropdownOpenPatientCare ? "open" : ""}`}
                   onMouseEnter={toggleDropdownPatientCare}
                 >
                   ADMISSIONS
                   <img src={downarrow} className='downArrow link' alt="" />
                 </div>
                 {dropdownOpenPatientCare && (
-                  <div className="dropdown-content mx-4 dropdown-item ">
+                  <div className="dropdown-content  dropdown-item ">
                     <div className="divdropdownLink">
                       <Link className="drpdnlink" to="/patientCare/facilities">Facilities</Link><br />
                     </div>
@@ -245,13 +245,13 @@ const NavbarTop = () => {
               |
             </p>
             <li className="navLinks">
-              <Link className="nav-link mx-2 link" to="/news&events">NEWS & EVENTS</Link>
+              <Link className="nav-link mx-2 navLink" to="/news&events">NEWS & EVENTS</Link>
             </li>
             <p className='nav-link oropt'>
               |
             </p>
             <li className="navLinks">
-              <Link className="nav-link mx-2 link" to="/nss">NSS</Link>
+              <Link className="nav-link mx-2 navLink" to="/nss">NSS</Link>
             </li>
           </ul>
 

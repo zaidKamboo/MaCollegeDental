@@ -176,7 +176,7 @@ code {
 }
 
 .foter {
-  background-color: rgb(185, 185, 185);
+  background-color: rgb(240, 240, 240);
   text-align: center;
   padding: 3%;
   width: 100%;
@@ -376,11 +376,10 @@ code {
   cursor: pointer;
 }
 
-.mainContainer {
-  margin-top: 5%;
-  margin-bottom: 5%;
+.CmainContainer {
+
   width: 100%;
-  /* border: 1px solid red; */
+  background-color: whitesmoke;
   display: flex;
 }
 
@@ -392,7 +391,7 @@ code {
 
 .copyRight1 {
   padding: 4%;
-  font-size: 19px;
+  font-size: 1.25rem;
 }
 
 .paraContent {

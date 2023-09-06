@@ -1,0 +1,17 @@
+.mainContainer {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+}
+
+.header {
+    color: #6EC1E4;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.clink {
+    color: #0170B9;
+    text-decoration: none;
+    font-size: 1.37rem;
+}

@@ -1,0 +1,43 @@
+.psContainer {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+}
+
+.psImg {
+    margin-top: 1.2rem;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.psImge {
+    height: 28.5em;
+
+    /* border: 1px solid red; */
+}
+
+.name {
+    font-weight: bolder;
+}
+
+.cn {
+    font-weight: bold;
+    margin-bottom: 1.4em;
+    color: #0F1D6E;
+}
+
+.npm {
+    margin-top: 1.2%;
+    margin-bottom: 1.2%;
+}
+
+.pm {
+    color: #0F1D6E;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.paras {
+    margin-left: 8%;
+    margin-right: 8%;
+}

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="foter">
       Copyright © 2023 M. A. Rangoonwala College of Dental Sciences & Research Centre. |
-      Devloped by AZAM I.T
+      Developed by AZAM I.T
     </div>
   )
 }

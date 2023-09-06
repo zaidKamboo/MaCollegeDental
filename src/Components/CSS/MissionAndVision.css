@@ -1,0 +1,23 @@
+.missionAndVisionContainer {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+}
+
+.mvhead {
+    font-weight: bold;
+    color: #0F1D6E;
+
+}
+
+.vision {
+    font-weight: bold;
+}
+
+.visionContent {
+    color: black;
+}
+
+.mission {
+    font-weight: bold;
+}

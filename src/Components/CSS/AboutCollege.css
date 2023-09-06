@@ -1,0 +1,15 @@
+.aboutContainer {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+}
+
+.header {
+    color: #6EC1E4;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.aboutCont {
+    font-size: 1.25rem;
+}
