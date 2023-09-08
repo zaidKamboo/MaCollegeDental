@@ -1,8 +1,8 @@
 import React from 'react'
-import presiImg from "../president.jpg"
-import PrinImg from "../principal.jpg"
+import presiImg from "../Images/president.jpg"
+import PrinImg from "../Images/principal.jpg"
 import { Link } from 'react-router-dom'
-import ilink from "../link.jpg"
+import ilink from "../Images/link.jpg"
 const PrincipalandOtherDetails = () => {
     return (
 

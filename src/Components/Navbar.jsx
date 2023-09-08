@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import logo from "../navbarlogo.webp";
-import more from "../hamburger.png"
+import logo from "../Images/navbarlogo.webp";
+import more from "../Images/hamburger.png"
 import { Link } from "react-router-dom";
 
-import downarrow from "../downarrow.png";
+import downarrow from "../Images/downarrow.png";
 import "./CSS/TopNav.css"
 import "./CSS/Navbar.css"
 const NavbarTop = () => {
@@ -118,7 +118,7 @@ const NavbarTop = () => {
                 {dropdownOpenAdmissions && (
                   <div className="dropdown-content  dropdown-item ">
                     <div className="divdropdownLink">
-                      <Link className="drpdnlink" to="/students/applicationGuidelines">Application Guidelines</Link><br />
+                      <Link className="drpdnlink" to="/admissions/applicationGuidelines">Application Guidelines</Link><br />
                     </div>
                     <div className="divdropdownLink">
                       <Link className="drpdnlink" to="/admissions/admission&affilation">Admission & Affilation</Link><br />
@@ -459,15 +459,15 @@ const NavbarTop = () => {
             </ul>
           </div>
         </nav> */}
+        {/* <p className='nav-link oropt'>
+        |
+      </p>
+      <li className="navLinks">
+        <Link className="nav-link mx-2 link" to="/muhsMandate">MUHS MANDATE</Link>
+      </li> */}
       </div>
     </div>
   )
 }
 
-{/* <p className='nav-link oropt'>
-  |
-</p>
-<li className="navLinks">
-  <Link className="nav-link mx-2 link" to="/muhsMandate">MUHS MANDATE</Link>
-</li> */}
-export default NavbarTop
+export default NavbarTop;

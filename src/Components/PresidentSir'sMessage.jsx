@@ -1,6 +1,6 @@
 import React from 'react'
 import "./CSS/PresidentSirsMessage.css"
-import psimg from "../president.jpg"
+import psimg from "../Images/president.jpg"
 const PresidentSirsMessage = () => {
     return (
         <div className='psmContainer'>

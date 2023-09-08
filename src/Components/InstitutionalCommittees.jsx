@@ -1,6 +1,7 @@
 import React from 'react'
 import "./CSS/InstitutionalCommittees.css"
 import { Link } from 'react-router-dom'
+import Academic from './InstitutionalCommitee/Academic'
 const InstitutionalCommittees = () => {
     return (
         <div className='mainContainer'>
@@ -10,7 +11,9 @@ const InstitutionalCommittees = () => {
             <div className="links">
 
                 <ul>
-                    <li><Link className='clink' to="/academicCommittee">Academic Committee</Link> </li>
+                    <li><Link className='clink' to="/academicCommittee">Academic Committee</Link>
+                        {/* <Academic /> */}
+                    </li>
                     <li><Link className='clink' to="/coreCommittee">Core Committee</Link></li>
                     <li><Link className='clink' to="/libraryCommittee">Library Committee</Link></li>
                     <li><Link className='clink' to="/researchCommittee">Research Committee</Link></li>
@@ -44,3 +47,4 @@ const InstitutionalCommittees = () => {
 }
 
 export default InstitutionalCommittees
+

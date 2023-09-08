@@ -1,0 +1,29 @@
+.AAContainer {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+    /* text-align: start; */
+}
+
+.header {
+    color: #0A2771;
+}
+
+.ulLink {
+    list-style-type: none;
+
+}
+
+.links {
+    text-decoration: none;
+    padding: 0;
+}
+
+.linkImg {
+    height: 1.6%;
+    width: 1.4%;
+}
+
+.links:hover {
+    text-decoration: underline;
+}

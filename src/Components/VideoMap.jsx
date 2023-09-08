@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
-import map from "../map.png"
-import v from "../cmpustour.mp4"
+import map from "../Images/map.png"
+import v from "../Images/cmpustour.mp4"
 const VideoMap = () => {
-    const videoRef = useRef( null );
+    const videoRef = useRef(null);
 
     const handleVideoEnded = () => {
         // Replay the video when it ends

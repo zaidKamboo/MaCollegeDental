@@ -1,0 +1,17 @@
+.agContainer {
+    left: 0;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+}
+
+a {
+    color: #0170B9;
+    text-decoration: none;
+}
+
+.head {
+    color: #6EC1E4;
+    font-weight: bold;
+    margin-bottom: 2%;
+}

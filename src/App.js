@@ -11,6 +11,10 @@ import PrincipalsMessage from "./Components/PrincipalsMessage";
 import VicePrincipal from "./Components/VicePrincipal";
 import OurStoryAndFutureGoals from "./Components/OurStoryAndFutureGoals";
 import InstitutionalCommittees from "./Components/InstitutionalCommittees";
+import ApplicationGuidelines from "./Components/Admissions/ApplicationGuidelines";
+import AdmissionsAndAffilation from "./Components/Admissions/AdmissionsAndAffilation";
+import Courses from "./Components/Admissions/Courses";
+import Curriculum from "./Components/Admissions/Curriculum";
 function App() {
   return (
     <Router>
@@ -24,7 +28,10 @@ function App() {
         <Route exact path="/aboutUs/vicePrincipal" Component={VicePrincipal} />
         <Route exact path="/aboutUs/story&futureGoals" Component={OurStoryAndFutureGoals} />
         <Route exact path="/aboutUs/institutionalCommittiees" Component={InstitutionalCommittees} />
-
+        <Route exact path="/admissions/applicationGuidelines" Component={ApplicationGuidelines} />
+        <Route exact path="/admissions/admission&affilation" Component={AdmissionsAndAffilation} />
+        <Route exact path="/admissions/courses" Component={Courses} />
+        <Route exact path="/admissions/curriculum" Component={Curriculum} />
       </Routes>
       <CopyrightDetails />
       <Footer />

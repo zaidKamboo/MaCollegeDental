@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import assemblyHall from "../AssemblyHall.jpg"
-import computerLab from "../ComputerLab.jpg"
-import dentalCollge from "../dentalCollege.jpg"
-import informationCenter from "../informationCentre.jpg"
-import mosque from "../mosque.jpg"
-import nss from "../nss.jpg"
-import sportsComplex from "../sportscomplex.jpg"
-import campusGround from "../campusground.jpg"
-import basketBallCourt from "../basketballCourt.jpg"
-import sittingArea from "../SittingAresa.jpg"
-import dcgirlsHostel from "../DcGirlsHostel.jpg"
-import dcboyshostel from "../dc boysHostel.jpg"
-import parkingarea from "../parking area.jpg"
-import collgeCanteen from "../collegeCanteen.jpg"
-import motoOfAzamCampus from "../MotoOfAzamCampus.jpg"
+import assemblyHall from "../Images/AssemblyHall.jpg"
+import computerLab from "../Images/ComputerLab.jpg"
+import dentalCollge from "../Images/dentalCollege.jpg"
+import informationCenter from "../Images/informationCentre.jpg"
+import mosque from "../Images/mosque.jpg"
+import nss from "../Images/nss.jpg"
+import sportsComplex from "../Images/sportscomplex.jpg"
+import campusGround from "../Images/campusground.jpg"
+import basketBallCourt from "../Images/basketballCourt.jpg"
+import sittingArea from "../Images/SittingAresa.jpg"
+import dcgirlsHostel from "../Images/DcGirlsHostel.jpg"
+import dcboyshostel from "../Images/dc boysHostel.jpg"
+import parkingarea from "../Images/parking area.jpg"
+import collgeCanteen from "../Images/collegeCanteen.jpg"
+import motoOfAzamCampus from "../Images/MotoOfAzamCampus.jpg"
 
 const AutoCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
