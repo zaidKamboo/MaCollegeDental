@@ -1,0 +1,31 @@
+.arContainer {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+}
+
+.header {
+    color: #6EC1E4;
+    font-weight: bold;
+    /* margin-bottom: 2%;    */
+}
+
+.alpha {
+    list-style-type: upper-alpha;
+}
+
+.alpha li {
+    margin-top: 12px;
+}
+
+.alpha li :nth-child(10) {
+    margin-bottom: 12px;
+}
+
+.roman {
+    list-style-type: upper-roman;
+}
+
+.roman li {
+    margin-top: 12px;
+}

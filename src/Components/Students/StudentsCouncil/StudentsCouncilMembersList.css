@@ -1,0 +1,27 @@
+.mainContainer {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.header {
+    color: #0F1D6E;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.link {
+    height: 23px;
+    width: 23px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+
+.li {
+    margin-bottom: 17px;
+    padding-bottom: 13px;
+    margin-left: 5px;
+}

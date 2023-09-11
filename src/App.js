@@ -15,6 +15,10 @@ import ApplicationGuidelines from "./Components/Admissions/ApplicationGuidelines
 import AdmissionsAndAffilation from "./Components/Admissions/AdmissionsAndAffilation";
 import Courses from "./Components/Admissions/Courses";
 import Curriculum from "./Components/Admissions/Curriculum";
+import AntiRagging from "./Components/Students/AntiRagging/AntiRagging";
+import Sports from "./Components/Students/Sports/Sports";
+import StudentsCouncilMembersLIst from "./Components/Students/StudentsCouncil/StudentsCouncilMembersLIst";
+import Hostel from "./Components/Students/Hostel/Hostel";
 function App() {
   return (
     <Router>
@@ -32,6 +36,10 @@ function App() {
         <Route exact path="/admissions/admission&affilation" Component={AdmissionsAndAffilation} />
         <Route exact path="/admissions/courses" Component={Courses} />
         <Route exact path="/admissions/curriculum" Component={Curriculum} />
+        <Route exact path="/students/anti-ragging" Component={AntiRagging} />
+        <Route exact path="/students/sports" Component={Sports} />
+        <Route exact path="/students/studentsCouncil" Component={StudentsCouncilMembersLIst} />
+        <Route exact path="/students/hostel" Component={Hostel} />
       </Routes>
       <CopyrightDetails />
       <Footer />
