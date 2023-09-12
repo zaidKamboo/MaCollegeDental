@@ -132,7 +132,9 @@
 }
 
 .oropt {
-  margin-top: 0.6rem;
+  margin-top: 3%;
+  height: 100%;
+  /* border: 2px solid red; */
   margin-left: 0.3rem;
   margin-right: 0.3rem;
   color: #0170B9;

@@ -19,6 +19,8 @@ import AntiRagging from "./Components/Students/AntiRagging/AntiRagging";
 import Sports from "./Components/Students/Sports/Sports";
 import StudentsCouncilMembersLIst from "./Components/Students/StudentsCouncil/StudentsCouncilMembersLIst";
 import Hostel from "./Components/Students/Hostel/Hostel";
+import HealthCareAndImmunizationPolicy from "./Components/Students/HealthCareAndImmunizationPolicy/HealthCareAndImmunizationPolicy";
+import MentorMenteeProgram from "./Components/Students/MentorMenteeProgram/MentorMenteeProgram";
 function App() {
   return (
     <Router>
@@ -40,6 +42,8 @@ function App() {
         <Route exact path="/students/sports" Component={Sports} />
         <Route exact path="/students/studentsCouncil" Component={StudentsCouncilMembersLIst} />
         <Route exact path="/students/hostel" Component={Hostel} />
+        <Route exact path="/students/healthCare&immunizationPolicy" Component={HealthCareAndImmunizationPolicy} />
+        <Route exact path="/students/mentorMenteeProgram" Component={MentorMenteeProgram} />
       </Routes>
       <CopyrightDetails />
       <Footer />

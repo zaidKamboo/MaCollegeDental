@@ -233,7 +233,7 @@ const NavbarTop = () => {
                   onMouseEnter={toggleDropdownPatientCare}
                 >
                   ADMISSIONS
-                  <img src={downarrow} className='downArrow link' alt="" />
+                  <img src={downarrow} className='downArrow ' alt="" />
                 </div>
                 {dropdownOpenPatientCare && (
                   <div className="dropdown-content  dropdown-item ">
