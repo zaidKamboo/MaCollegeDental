@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import Home from "./Components/Home";
+import Home from "./Components/Home/Home";
 import CopyrightDetails from "./Components/CopyrightDetails"
 import AboutCollege from "./Components/AboutCollege";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";

@@ -1,14 +1,13 @@
 import React from 'react'
-import presiImg from "../Images/president.jpg"
-import PrinImg from "../Images/principal.jpg"
+import presiImg from "../../Images/president.jpg"
+import PrinImg from "../../Images/principal.jpg"
 import { Link } from 'react-router-dom'
-import ilink from "../Images/link.jpg"
+import ilink from "../../Images/link.jpg"
 const PrincipalandOtherDetails = () => {
     return (
 
         <div>
             <div className='ppMainContainer'>
-
                 <div className="item1">
                     <div className="innerContainer">
                         <h3 className='headin'><b>
