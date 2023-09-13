@@ -1,7 +1,7 @@
 import React from 'react'
-import "../CSS/Admissions/AdmissionsAndAffilation.css"
+import "./AdmissionsAndAffilation.css"
 import { Link } from 'react-router-dom'
-import link from "../../Images/link.jpg"
+import link from "../../../Images/link.jpg"
 const AdmissionsAndAffilation = () => {
     return (
         <div className='AAContainer'>

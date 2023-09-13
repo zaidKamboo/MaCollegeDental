@@ -1,5 +1,5 @@
 import React from 'react'
-import "./CSS/AboutCollege.css"
+import "./AboutCollege.css"
 const AboutCollege = () => {
     return (
         <div className="aboutContainer">

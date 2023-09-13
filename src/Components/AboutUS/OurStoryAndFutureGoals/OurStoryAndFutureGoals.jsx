@@ -1,5 +1,5 @@
 import React from 'react'
-import "./CSS/OurStoryAndFutureGoals.css"
+import "./OurStoryAndFutureGoals.css"
 const OurStoryAndFutureGoals = () => {
     return (
         <div className='osfgContainer'>

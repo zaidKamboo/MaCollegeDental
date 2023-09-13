@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import map from "../Images/map.png"
-import v from "../Images/cmpustour.mp4"
+import map from "../../Images/map.png"
+import v from "../../Images/cmpustour.mp4"
 const VideoMap = () => {
     const videoRef = useRef(null);
 

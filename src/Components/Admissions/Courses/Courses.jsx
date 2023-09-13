@@ -1,6 +1,6 @@
 import React from 'react'
-import "../CSS/Admissions/Courses.css"
-import CoursesImage from "../../Images/CoursesImg.jpg"
+import "./Courses.css"
+import CoursesImage from "../../../Images/CoursesImg.jpg"
 const Courses = () => {
     return (
         <div className='coursesContainer'>

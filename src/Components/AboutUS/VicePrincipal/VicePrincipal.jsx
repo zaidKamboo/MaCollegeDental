@@ -1,5 +1,5 @@
 import React from 'react'
-import "./CSS/VicePrincipal.css"
+import "./VicePrincipal.css"
 const VicePrincipal = () => {
     return (
         <div className='vpContainer'>

@@ -1,6 +1,6 @@
 import React from 'react'
-import "../CSS/Admissions/Curriculum.css"
-import link from "../../Images/link.jpg"
+import "./Curriculum.css"
+import link from "../../../Images/link.jpg"
 const Curriculum = () => {
     return (
         <div className='curriculumContainer'>

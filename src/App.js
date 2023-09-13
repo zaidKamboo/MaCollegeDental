@@ -1,26 +1,27 @@
 import "./App.css";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
-import CopyrightDetails from "./Components/CopyrightDetails"
-import AboutCollege from "./Components/AboutCollege";
+import CopyrightDetails from "./Components/CopyrightDetails/CopyrightDetails"
+import AboutCollege from "./Components/AboutUS/AboutCollege/AboutCollege";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import MissionAndVision from "./Components/MissionAndVision";
-import PresidentSirsMessage from "./Components/PresidentSir'sMessage";
-import PrincipalsMessage from "./Components/PrincipalsMessage";
-import VicePrincipal from "./Components/VicePrincipal";
-import OurStoryAndFutureGoals from "./Components/OurStoryAndFutureGoals";
-import InstitutionalCommittees from "./Components/InstitutionalCommittees";
-import ApplicationGuidelines from "./Components/Admissions/ApplicationGuidelines";
-import AdmissionsAndAffilation from "./Components/Admissions/AdmissionsAndAffilation";
-import Courses from "./Components/Admissions/Courses";
-import Curriculum from "./Components/Admissions/Curriculum";
+import MissionAndVision from "./Components/AboutUS/MisssionAndVision/MissionAndVision";
+import PresidentSirsMessage from "./Components/AboutUS/PresidentSir'sMessge/PresidentSir'sMessage";
+import PrincipalsMessage from "./Components/AboutUS/Principal'sMessage/PrincipalsMessage";
+import VicePrincipal from "./Components/AboutUS/VicePrincipal/VicePrincipal";
+import OurStoryAndFutureGoals from "./Components/AboutUS/OurStoryAndFutureGoals/OurStoryAndFutureGoals";
+import InstitutionalCommittees from "./Components/AboutUS/InstitutionalCommittees/InstitutionalCommittees";
+import ApplicationGuidelines from "./Components/Admissions/ApplicationGuidelines/ApplicationGuidelines";
+import AdmissionsAndAffilation from "./Components/Admissions/AdmissionsAndAffilation/AdmissionsAndAffilation";
+import Courses from "./Components/Admissions/Courses/Courses";
+import Curriculum from "./Components/Admissions/Curriculum/Curriculum";
 import AntiRagging from "./Components/Students/AntiRagging/AntiRagging";
 import Sports from "./Components/Students/Sports/Sports";
 import StudentsCouncilMembersLIst from "./Components/Students/StudentsCouncil/StudentsCouncilMembersLIst";
 import Hostel from "./Components/Students/Hostel/Hostel";
 import HealthCareAndImmunizationPolicy from "./Components/Students/HealthCareAndImmunizationPolicy/HealthCareAndImmunizationPolicy";
 import MentorMenteeProgram from "./Components/Students/MentorMenteeProgram/MentorMenteeProgram";
+import NestedDropdown from "./Components/NestedDropdown/NestedDropdown";
 function App() {
   return (
     <Router>
@@ -45,6 +46,7 @@ function App() {
         <Route exact path="/students/healthCare&immunizationPolicy" Component={HealthCareAndImmunizationPolicy} />
         <Route exact path="/students/mentorMenteeProgram" Component={MentorMenteeProgram} />
       </Routes>
+      <NestedDropdown/>
       <CopyrightDetails />
       <Footer />
     </Router>

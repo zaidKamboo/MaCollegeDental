@@ -1,11 +1,14 @@
+// REACT IMPORTS
 import React, { useState } from 'react';
-import logo from "../Images/navbarlogo.webp";
-import more from "../Images/hamburger.png"
 import { Link } from "react-router-dom";
+// CSS IMPORTS
+import "./TopNav.css"
+import ".//Navbar.css"
+// IMAGES IMPORTS
+import logo from "../../Images/navbarlogo.webp";
+import more from "../../Images/hamburger.png"
+import downarrow from "../../Images/downarrow.png";
 
-import downarrow from "../Images/downarrow.png";
-import "./CSS/TopNav.css"
-import "./CSS/Navbar.css"
 const NavbarTop = () => {
 
   const [dropdownOpenAbout, setDropdownOpenAbout] = useState(false);

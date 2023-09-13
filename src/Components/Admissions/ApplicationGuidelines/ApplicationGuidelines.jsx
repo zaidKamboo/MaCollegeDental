@@ -1,5 +1,5 @@
 import React from 'react'
-import "../CSS/Admissions/ApplicationGuidelines.css"
+import "./ApplicationGuidelines.css"
 const ApplicationGuidelines = () => {
     return (
         <div className='agContainer'>

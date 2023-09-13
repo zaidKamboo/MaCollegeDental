@@ -1,7 +1,7 @@
 import React from 'react'
-import "./CSS/InstitutionalCommittees.css"
+import "./InstitutionalCommittees.css"
 import { Link } from 'react-router-dom'
-import Academic from './InstitutionalCommitee/Academic'
+// import Academic from '../../InstitutionalCommitee/Academic'
 const InstitutionalCommittees = () => {
     return (
         <div className='mainContainer'>

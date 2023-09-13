@@ -1,6 +1,6 @@
 import React from 'react'
-import "./CSS/PrincipalsMessage.css"
-import pimg from "../Images/principal.jpg"
+import "./PrincipalsMessage.css"
+import pimg from "../../../Images/principal.jpg"
 const PrincipalsMessage = () => {
     return (
         <div>

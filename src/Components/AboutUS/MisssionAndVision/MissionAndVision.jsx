@@ -1,5 +1,5 @@
 import React from 'react'
-import "./CSS/MissionAndVision.css"
+import "./MissionAndVision.css"
 const MissionAndVision = () => {
     return (
         <div className='missionAndVisionContainer'>

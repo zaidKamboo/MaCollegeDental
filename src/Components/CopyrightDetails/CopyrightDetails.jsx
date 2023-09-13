@@ -1,5 +1,6 @@
 import React from 'react'
-
+// CSS IMPORTS
+import "./CopyrightDetails.css"
 const CopyrightDetails = () => {
     return (
         <div className='CmainContainer'>

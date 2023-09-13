@@ -138,13 +138,6 @@ code {
   color: white;
 }
 
-.foter {
-  background-color: #eeeeee;
-  text-align: center;
-  padding: 3%;
-  width: 100%;
-}
-
 /* .sidenavItem {
   border: 2px solid black;
 
@@ -339,24 +332,3 @@ code {
   cursor: pointer;
 }
 
-.CmainContainer {
-
-  width: 100%;
-  background-color: white;
-  display: flex;
-}
-
-.cont {
-  width: 25%;
-  height: 100%;
-  text-align: center;
-}
-
-.copyRight1 {
-  padding: 4%;
-  font-size: 1.25rem;
-}
-
-.paraContent {
-  padding: 7%;
-}

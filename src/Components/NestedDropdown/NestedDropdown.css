@@ -1,4 +1,4 @@
-/* .nested-dropdown-container {
+.nested-dropdown-container {
   position: relative;
   display: inline-block;
 }
@@ -45,4 +45,4 @@
 .dropdown-content a:hover,
 .nested-dropdown-content a:hover {
   background-color: #f0f0f0;
-} */
+}
