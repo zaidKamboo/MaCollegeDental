@@ -21,7 +21,8 @@ import StudentsCouncilMembersLIst from "./Components/Students/StudentsCouncil/St
 import Hostel from "./Components/Students/Hostel/Hostel";
 import HealthCareAndImmunizationPolicy from "./Components/Students/HealthCareAndImmunizationPolicy/HealthCareAndImmunizationPolicy";
 import MentorMenteeProgram from "./Components/Students/MentorMenteeProgram/MentorMenteeProgram";
-import NestedDropdown from "./Components/NestedDropdown/NestedDropdown";
+import CodeOfConduct from "./Components/Students/CodeOfConduct/CodeOfConduct";
+import AluminiAssociationCommittee from "./Components/Students/Alumini/AluminiAssociationCommittee/AluminiAssociationCommittee";
 function App() {
   return (
     <Router>
@@ -45,8 +46,9 @@ function App() {
         <Route exact path="/students/hostel" Component={Hostel} />
         <Route exact path="/students/healthCare&immunizationPolicy" Component={HealthCareAndImmunizationPolicy} />
         <Route exact path="/students/mentorMenteeProgram" Component={MentorMenteeProgram} />
+        <Route exact path="/students/codeOfConduct" Component={CodeOfConduct} />
+        <Route exact path="/students/alumini/aluminiAssociationCommittee" Component={AluminiAssociationCommittee} />
       </Routes>
-      <NestedDropdown/>
       <CopyrightDetails />
       <Footer />
     </Router>

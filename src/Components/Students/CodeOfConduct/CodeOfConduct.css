@@ -1,0 +1,16 @@
+.ccMainContainer {
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.hea {
+    font-weight: bold;
+    color: rgb(10, 10, 104);
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.cot li,
+.gg li {
+    padding-top: 6px;
+}

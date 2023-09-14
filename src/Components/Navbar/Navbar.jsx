@@ -34,6 +34,10 @@ const NavbarTop = () => {
   const toggleDropdownPatientCare = () => {
     setDropdownOpenPatientCare(!dropdownOpenPatientCare);
   };
+  const [dropdownOpenAlumini, setDropdownOpenAlumini] = useState(false);
+  const toggleDropdownAlumini = () => {
+    setDropdownOpenAlumini(!dropdownOpenAlumini);
+  };
   const [Menu, setMenu] = useState(false)
   const toggleMenu = () => {
     setMenu(!Menu);
@@ -46,6 +50,7 @@ const NavbarTop = () => {
       x.className = "navbar"
     }
   }
+
 
   return (
     <div className='Navbar'>
@@ -68,7 +73,7 @@ const NavbarTop = () => {
               |
             </p>
             <li className="navLinks">
-              <div className="dropdown-container" onMouseLeave={toggleDropdownAbout}>
+              <div className="dropdown-container " onMouseLeave={toggleDropdownAbout}>
                 <div
                   className={`dropdown-trigger  navdrpdn ${dropdownOpenAbout ? "open" : ""}`}
                   onMouseEnter={toggleDropdownAbout}
@@ -171,8 +176,24 @@ const NavbarTop = () => {
                     <div className="divdropdownLink">
                       <Link className="drpdnlink" to="/students/codeOfConduct">Code of Conduct</Link><br />
                     </div>
-                    <div className="divdropdownLink">
-                      <Link className="drpdnlink" to="/students/healthCare&immunizationPolicy">Health Care & Immunization Policy</Link><br />
+                    <div className="dropdown-container" onMouseLeave={toggleDropdownAlumini} >
+                      <div
+                        className={`dropdown-trigger navdrpdn ${dropdownOpenAlumini ? "open" : ""}`}
+                        onMouseEnter={toggleDropdownAlumini}
+                      >
+                        Alumini
+                        <img src={downarrow} className='downArrow ' alt="" />
+                      </div>
+                      {dropdownOpenAlumini && (
+                        <div className="dropdown-content  dropdown-item ">
+                          <div className="divdropdownLink">
+                            <Link className="drpdnlink" to="/students/alumini/aluminiRegistrationPortal">Alumini Registration Portal </Link><br />
+                          </div>
+                          <div className="divdropdownLink">
+                            <Link className="drpdnlink" to="/students/alumini/aluminiAssociationCommittee">Alumini Association Committee</Link><br />
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 )}
@@ -235,7 +256,7 @@ const NavbarTop = () => {
                   className={`dropdown-trigger navdrpdn ${dropdownOpenPatientCare ? "open" : ""}`}
                   onMouseEnter={toggleDropdownPatientCare}
                 >
-                  ADMISSIONS
+                  PATIENT CARE
                   <img src={downarrow} className='downArrow ' alt="" />
                 </div>
                 {dropdownOpenPatientCare && (
