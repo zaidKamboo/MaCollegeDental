@@ -1,0 +1,14 @@
+.mc {
+  margin-left: 6%;
+  margin-right: 6%;
+}
+.he {
+  font-weight: bold;
+}
+.none {
+  list-style-type: none;
+}
+.cc li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

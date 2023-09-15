@@ -2,7 +2,7 @@ import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
-import CopyrightDetails from "./Components/CopyrightDetails/CopyrightDetails"
+import CopyrightDetails from "./Components/CopyrightDetails/CopyrightDetails";
 import AboutCollege from "./Components/AboutUS/AboutCollege/AboutCollege";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MissionAndVision from "./Components/AboutUS/MisssionAndVision/MissionAndVision";
@@ -23,6 +23,12 @@ import HealthCareAndImmunizationPolicy from "./Components/Students/HealthCareAnd
 import MentorMenteeProgram from "./Components/Students/MentorMenteeProgram/MentorMenteeProgram";
 import CodeOfConduct from "./Components/Students/CodeOfConduct/CodeOfConduct";
 import AluminiAssociationCommittee from "./Components/Students/Alumini/AluminiAssociationCommittee/AluminiAssociationCommittee";
+import AcademicCalendar from "./Components/Academics/AcademicCalendar/AcademicCalendar";
+import LearningPathways from "./Components/Academics/LearningPathways/LearningPathways";
+import InnovativeTeachingActivities from "./Components/Academics/InnovativeTeachingActivities/InnovativeTeachingActivities";
+import ExtraCurricularActivities from "./Components/Academics/ExtraCurricularActivities/ExtraCurricularActivities";
+import ListOfHolidays from "./Components/Academics/ListOfHolidays/ListOfHolidays";
+import Syallabus from "./Components/Academics/Syallabus/Syallabus";
 function App() {
   return (
     <Router>
@@ -30,24 +36,94 @@ function App() {
       <Routes>
         <Route exact path="/" Component={Home} />
         <Route exact path="/aboutUs/aboutCollege" Component={AboutCollege} />
-        <Route exact path="/aboutUs/mission&vision" Component={MissionAndVision} />
-        <Route exact path="/aboutUs/presidentSirMessage" Component={PresidentSirsMessage} />
-        <Route exact path="/aboutUs/principalMessage" Component={PrincipalsMessage} />
+        <Route
+          exact
+          path="/aboutUs/mission&vision"
+          Component={MissionAndVision}
+        />
+        <Route
+          exact
+          path="/aboutUs/presidentSirMessage"
+          Component={PresidentSirsMessage}
+        />
+        <Route
+          exact
+          path="/aboutUs/principalMessage"
+          Component={PrincipalsMessage}
+        />
         <Route exact path="/aboutUs/vicePrincipal" Component={VicePrincipal} />
-        <Route exact path="/aboutUs/story&futureGoals" Component={OurStoryAndFutureGoals} />
-        <Route exact path="/aboutUs/institutionalCommittiees" Component={InstitutionalCommittees} />
-        <Route exact path="/admissions/applicationGuidelines" Component={ApplicationGuidelines} />
-        <Route exact path="/admissions/admission&affilation" Component={AdmissionsAndAffilation} />
+        <Route
+          exact
+          path="/aboutUs/story&futureGoals"
+          Component={OurStoryAndFutureGoals}
+        />
+        <Route
+          exact
+          path="/aboutUs/institutionalCommittiees"
+          Component={InstitutionalCommittees}
+        />
+        <Route
+          exact
+          path="/admissions/applicationGuidelines"
+          Component={ApplicationGuidelines}
+        />
+        <Route
+          exact
+          path="/admissions/admission&affilation"
+          Component={AdmissionsAndAffilation}
+        />
         <Route exact path="/admissions/courses" Component={Courses} />
         <Route exact path="/admissions/curriculum" Component={Curriculum} />
         <Route exact path="/students/anti-ragging" Component={AntiRagging} />
         <Route exact path="/students/sports" Component={Sports} />
-        <Route exact path="/students/studentsCouncil" Component={StudentsCouncilMembersLIst} />
+        <Route
+          exact
+          path="/students/studentsCouncil"
+          Component={StudentsCouncilMembersLIst}
+        />
         <Route exact path="/students/hostel" Component={Hostel} />
-        <Route exact path="/students/healthCare&immunizationPolicy" Component={HealthCareAndImmunizationPolicy} />
-        <Route exact path="/students/mentorMenteeProgram" Component={MentorMenteeProgram} />
+        <Route
+          exact
+          path="/students/healthCare&immunizationPolicy"
+          Component={HealthCareAndImmunizationPolicy}
+        />
+        <Route
+          exact
+          path="/students/mentorMenteeProgram"
+          Component={MentorMenteeProgram}
+        />
         <Route exact path="/students/codeOfConduct" Component={CodeOfConduct} />
-        <Route exact path="/students/alumini/aluminiAssociationCommittee" Component={AluminiAssociationCommittee} />
+        <Route
+          exact
+          path="/students/alumini/aluminiAssociationCommittee"
+          Component={AluminiAssociationCommittee}
+        />
+        <Route
+          exact
+          path="/academics/academicCalendar"
+          Component={AcademicCalendar}
+        />
+        <Route
+          exact
+          path="/academics/learningPathways"
+          Component={LearningPathways}
+        />
+        <Route
+          exact
+          path="/academics/innovativeTeachingActivities"
+          Component={InnovativeTeachingActivities}
+        />
+        <Route
+          exact
+          path="/academics/extraCurricularActivities"
+          Component={ExtraCurricularActivities}
+        />
+        <Route
+          exact
+          path="/academics/listOfHolidays"
+          Component={ListOfHolidays}
+        />
+        <Route exact path="/academics/syllabus" Component={Syallabus} />
       </Routes>
       <CopyrightDetails />
       <Footer />

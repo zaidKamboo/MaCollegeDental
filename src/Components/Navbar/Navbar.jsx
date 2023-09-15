@@ -11,39 +11,39 @@ import downarrow from "../../Images/downarrow.png";
 
 const NavbarTop = () => {
 
-  const [dropdownOpenAbout, setDropdownOpenAbout] = useState(false);
+  const [ dropdownOpenAbout, setDropdownOpenAbout ] = useState( false );
   const toggleDropdownAbout = () => {
-    setDropdownOpenAbout(!dropdownOpenAbout);
+    setDropdownOpenAbout( !dropdownOpenAbout );
   };
 
-  const [dropdownOpenAdmissions, setDropdownOpenAdmissions] = useState(false);
+  const [ dropdownOpenAdmissions, setDropdownOpenAdmissions ] = useState( false );
   const toggleDropdownAdmissions = () => {
-    setDropdownOpenAdmissions(!dropdownOpenAdmissions);
+    setDropdownOpenAdmissions( !dropdownOpenAdmissions );
   };
 
-  const [dropdownOpenStudents, setDropdownOpenStudents] = useState(false);
+  const [ dropdownOpenStudents, setDropdownOpenStudents ] = useState( false );
   const toggleDropdownStudents = () => {
-    setDropdownOpenStudents(!dropdownOpenStudents);
+    setDropdownOpenStudents( !dropdownOpenStudents );
   };
 
-  const [dropdownOpenAcademics, setDropdownOpenAcademics] = useState(false);
+  const [ dropdownOpenAcademics, setDropdownOpenAcademics ] = useState( false );
   const toggleDropdownAcademics = () => {
-    setDropdownOpenAcademics(!dropdownOpenAcademics);
+    setDropdownOpenAcademics( !dropdownOpenAcademics );
   };
-  const [dropdownOpenPatientCare, setDropdownOpenPatientCare] = useState(false);
+  const [ dropdownOpenPatientCare, setDropdownOpenPatientCare ] = useState( false );
   const toggleDropdownPatientCare = () => {
-    setDropdownOpenPatientCare(!dropdownOpenPatientCare);
+    setDropdownOpenPatientCare( !dropdownOpenPatientCare );
   };
-  const [dropdownOpenAlumini, setDropdownOpenAlumini] = useState(false);
+  const [ dropdownOpenAlumini, setDropdownOpenAlumini ] = useState( false );
   const toggleDropdownAlumini = () => {
-    setDropdownOpenAlumini(!dropdownOpenAlumini);
+    setDropdownOpenAlumini( !dropdownOpenAlumini );
   };
-  const [Menu, setMenu] = useState(false)
+  const [ Menu, setMenu ] = useState( false )
   const toggleMenu = () => {
-    setMenu(!Menu);
-    var x = document.getElementById("nav");
-    if (x.className === "navbar") {
-      console.log("hello")
+    setMenu( !Menu );
+    var x = document.getElementById( "nav" );
+    if ( x.className === "navbar" ) {
+      console.log( "hello" )
       x.className += "respNav"
     }
     else {
@@ -75,7 +75,7 @@ const NavbarTop = () => {
             <li className="navLinks">
               <div className="dropdown-container " onMouseLeave={toggleDropdownAbout}>
                 <div
-                  className={`dropdown-trigger  navdrpdn ${dropdownOpenAbout ? "open" : ""}`}
+                  className={`dropdown-trigger  navdrpdn ${ dropdownOpenAbout ? "open" : "" }`}
                   onMouseEnter={toggleDropdownAbout}
                 >
                   ABOUT US
@@ -114,7 +114,7 @@ const NavbarTop = () => {
             <li className="navLinks">
               <div className="dropdown-container" onMouseLeave={toggleDropdownAdmissions}>
                 <div
-                  className={`dropdown-trigger  navdrpdn ${dropdownOpenAdmissions ? "open" : ""}`}
+                  className={`dropdown-trigger  navdrpdn ${ dropdownOpenAdmissions ? "open" : "" }`}
                   onMouseEnter={toggleDropdownAdmissions}
                 >
                   ADMISSIONS
@@ -144,7 +144,7 @@ const NavbarTop = () => {
             <li className="navLinks">
               <div className="dropdown-container" onMouseLeave={toggleDropdownStudents}>
                 <div
-                  className={`dropdown-trigger navdrpdn ${dropdownOpenStudents ? "open" : ""}`}
+                  className={`dropdown-trigger navdrpdn ${ dropdownOpenStudents ? "open" : "" }`}
                   onMouseEnter={toggleDropdownStudents}
                 >
                   STUDENTS
@@ -178,7 +178,7 @@ const NavbarTop = () => {
                     </div>
                     <div className="dropdown-container" onMouseLeave={toggleDropdownAlumini} >
                       <div
-                        className={`dropdown-trigger navdrpdn ${dropdownOpenAlumini ? "open" : ""}`}
+                        className={`dropdown-trigger navdrpdn ${ dropdownOpenAlumini ? "open" : "" }`}
                         onMouseEnter={toggleDropdownAlumini}
                       >
                         Alumini
@@ -205,7 +205,7 @@ const NavbarTop = () => {
             <li className="navLinks">
               <div className="dropdown-container " onMouseLeave={toggleDropdownAcademics}>
                 <div
-                  className={`dropdown-trigger navdrpdn ${dropdownOpenAcademics ? "open" : ""}`}
+                  className={`dropdown-trigger navdrpdn ${ dropdownOpenAcademics ? "open" : "" }`}
                   onMouseEnter={toggleDropdownAcademics}
                 >
                   ACADEMICS
@@ -253,7 +253,7 @@ const NavbarTop = () => {
             <li className="navLinks">
               <div className="dropdown-container" onMouseLeave={toggleDropdownPatientCare}>
                 <div
-                  className={`dropdown-trigger navdrpdn ${dropdownOpenPatientCare ? "open" : ""}`}
+                  className={`dropdown-trigger navdrpdn ${ dropdownOpenPatientCare ? "open" : "" }`}
                   onMouseEnter={toggleDropdownPatientCare}
                 >
                   PATIENT CARE

@@ -1,0 +1,18 @@
+.mc {
+  margin-left: 6%;
+  margin-right: 6%;
+}
+.hes {
+  color: #092d73;
+  font-weight: bold;
+}
+.courseName {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  color: gray;
+}
+.ln {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
