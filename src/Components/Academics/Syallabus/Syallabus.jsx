@@ -28,7 +28,52 @@ const Syallabus = () => {
                 </h5>
             </strong>
             <div className="ln">
-                <img className='lin' src={link} alt="" /> <a target='__blank' href="https://mardentalcollege.org/wp-content/uploads/2022/05/Oral-Maxillofacial-Surgery-SYLLABUS-PART-I.pdf">Oral Maxillofacial Surgery SYLLABUS PART-I</a><br />
+                <img className='lin' src={link} alt="" /> <a target='__blank' href="https://mardentalcollege.org/wp-content/uploads/2022/05/Oral-Maxillofacial-Surgery-SYLLABUS-PART-I.pdf">Oral Maxillofacial Surgery SYLLABUS PART - I</a><br />
+            </div>
+            <div className="ln">
+                <img className='lin' src={link} alt="" /> <a target='__blank' href="https://mardentalcollege.org/wp-content/uploads/2022/05/Oral-Maxillofacial-Surgery_SYLLABUS-PART-II.pdf">Oral Maxillofacial Surgery SYLLABUS PART - II</a><br />
+            </div>
+            <div className="ln">
+                <img className='lin' src={link} alt="" /> <a target='__blank' href="https://mardentalcollege.org/wp-content/uploads/2022/05/Oral-Medicine-Radiology-SYLLABUS-PART-I.pdf">Oral Medicine & Radiology SYLLABUS PART - I</a><br />
+            </div>
+            <div className="ln">
+                <img className='lin' src={link} alt="" /> <a target='__blank' href=" https://mardentalcollege.org/wp-content/uploads/2022/05/Oral-Medicine-Radiology_SYLLABUS-PART-II.pdf">Oral Medicine & Radiology SYLLABUS PART - II</a><br />
+            </div>
+            <div className="ln">
+                <img className='lin' src={link} alt="" /> <a target='__blank' href=" https://mardentalcollege.org/wp-content/uploads/2022/05/Orthodontics-and-Dentofacial-Orthopedics-SYLLABUS-PART0I.pdf">Orthrodentics and Dentofacial Orthropaedics SYLLABUS PART - I</a><br />
+            </div>
+            <div className="ln">
+                <img className='lin' src={link} alt="" /> <a target='__blank' href=" https://mardentalcollege.org/wp-content/uploads/2022/05/Orthodontics_SYLLABUS-PART-II.pdf">Orthrodentics and Dentofacial Orthropaedics SYLLABUS PART - II</a><br />
+            </div>
+            <div className="ln">
+                <img className='lin' src={link} alt="" /> <a target='__blank' href="https://mardentalcollege.org/wp-content/uploads/2022/05/Paediatric-Dentistry-SYLLABUS-PART-I.pdf">Pediatric Dentistry SYLLABUS PART - I</a><br />
+            </div>
+            <div className="ln">
+                <img className='lin' src={link} alt="" /> <a target='__blank' href="https://mardentalcollege.org/wp-content/uploads/2022/05/Pediatric-Dentistry_SYLLABUS-PART-II.pdf">Pediatric Dentistry SYLLABUS PART - II</a><br />
+            </div>
+            <div className="ln">
+                <img className='lin' src={link} alt="" /> <a target='__blank' href="https://mardentalcollege.org/wp-content/uploads/2022/05/Periodontology-SYLLABUS-PART-I.pdf">Periodontology SYLLABUS PART - I</a><br />
+            </div>
+            <div className="ln">
+                <img className='lin' src={link} alt="" /> <a target='__blank' href="https://mardentalcollege.org/wp-content/uploads/2022/05/Periodontology_SYLLABUS-PART-II.pdf">Periodontology SYLLABUS PART - II</a><br />
+            </div>
+            <div className="ln">
+                <img className='lin' src={link} alt="" /> <a target='__blank' href="https://mardentalcollege.org/wp-content/uploads/2022/05/Prosthodontics-and-Crown-and-Bridge-SYLLABUS-PART-I.pdf">Prosthodontics and Crown and Bridge SYLLABUS PART - I</a><br />
+            </div>
+            <div className="ln">
+                <img className='lin' src={link} alt="" /> <a target='__blank' href="https://mardentalcollege.org/wp-content/uploads/2022/05/Prosthodontics_SYLLABUS-PART-II.pdf">Prosthodontics and Crown and Bridge SYLLABUS PART - II</a><br />
+            </div>
+            <div className="ln">
+                <img className='lin' src={link} alt="" /> <a target='__blank' href="https://mardentalcollege.org/wp-content/uploads/2022/05/Conservative-Dentistry-And-Endodontics-SYLLABUS-PART-I.pdf">Conservative Dentistry and Endodontics SYLLABUS PART - I</a><br />
+            </div>
+            <div className="ln">
+                <img className='lin' src={link} alt="" /> <a target='__blank' href="https://mardentalcollege.org/wp-content/uploads/2022/05/Conservative-Dentistry_SYLLABUS-PART-II.pdf">Conservative Dentistry and Endodontics SYLLABUS PART - II</a><br />
+            </div>
+            <div className="ln">
+                <img className='lin' src={link} alt="" /> <a target='__blank' href="https://mardentalcollege.org/wp-content/uploads/2022/05/Oral-Maxillofacial-Pathology-and-Oral-Microbiology-SYLLABUS-PART-I.pdf">Oral and Maxxillofacial Pathology and Oral Microbiology SYLLABUS PART - II</a><br />
+            </div>
+            <div className="ln">
+                <img className='lin' src={link} alt="" /> <a target='__blank' href="https://mardentalcollege.org/wp-content/uploads/2022/05/Oral-Max-Pathology_SYLLABUS-PART-II.pdf">Oral and Maxxillofacial Pathology and Oral Microbiology SYLLABUS PART - II</a><br />
             </div>
         </div >
     )

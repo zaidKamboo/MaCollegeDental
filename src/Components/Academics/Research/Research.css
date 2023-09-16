@@ -1,0 +1,10 @@
+.mc{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.bold{
+    /* border :1px dashed red; */
+    color: rgb(65, 65, 65);
+    font-size: 3rem;
+    font-weight: bold;
+}

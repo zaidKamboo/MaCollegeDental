@@ -1,0 +1,18 @@
+.mc{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+.h{
+    color: #2D476E;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.images{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.images img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

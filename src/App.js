@@ -29,6 +29,9 @@ import InnovativeTeachingActivities from "./Components/Academics/InnovativeTeach
 import ExtraCurricularActivities from "./Components/Academics/ExtraCurricularActivities/ExtraCurricularActivities";
 import ListOfHolidays from "./Components/Academics/ListOfHolidays/ListOfHolidays";
 import Syallabus from "./Components/Academics/Syallabus/Syallabus";
+import Research from "./Components/Academics/Research/Research";
+import LibraryFacilities from "./Components/Academics/LibraryFacilities/LibraryFacilities";
+import Facilities from "./Components/PatientCare/Facilities/Facilities";
 function App() {
   return (
     <Router>
@@ -124,6 +127,9 @@ function App() {
           Component={ListOfHolidays}
         />
         <Route exact path="/academics/syllabus" Component={Syallabus} />
+        <Route exact path="/academics/research" Component={Research} />
+        <Route exact path="/academics/libraryFacilities" Component={LibraryFacilities} />
+        <Route exact path="/patientCare/facilities" Component={Facilities} />
       </Routes>
       <CopyrightDetails />
       <Footer />
